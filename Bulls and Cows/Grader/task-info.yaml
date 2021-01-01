@@ -177,6 +177,9 @@ files:
         }
     }
   learner_created: false
+- name: src/bullscows/Arrays.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/53/stages/288/implement#comment
 status: Failed
 feedback:
@@ -190,6 +193,7 @@ feedback:
 
     ---
 
+    uwaga
     &gt; 3601
-  time: Fri, 01 Jan 2021 15:28:36 UTC
+  time: Fri, 01 Jan 2021 18:49:47 UTC
 record: -1
