@@ -89,11 +89,14 @@ class ArrayMaker{
   public int checkForCows (int[] password,int[] guess){
         int cows=0;
 
-        for (int element : password){
+        for (int i=0; i< password.length;i++){
 
-            for(int i=0; i< password.length;i++){
-                if(element==guess[i]){
-                    cows++;}
+            for(int j=0; j< password.length;j++){
+                if(password[i]==guess[j]){
+                    cows++;
+                    break;
+
+                }
             }
 
         }
