@@ -1,6 +1,5 @@
 package bullscows;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -89,17 +88,11 @@ class ArrayMaker{
   public int checkForCows (int[] password,int[] guess){
         int cows=0;
 
-        for (int i=0; i< password.length;i++){
 
-            for(int j=0; j< password.length;j++){
-                if(password[i]==guess[j]){
-                    cows++;
-                    break;
-
-                }
-            }
-
-        }
+        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
+      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
+      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
+      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
         return cows;
     }
 
