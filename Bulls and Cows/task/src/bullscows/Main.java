@@ -1,11 +1,24 @@
 package bullscows;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
+        Random random = new Random();
+        Scanner sc = new Scanner(System.in);
+        String generateSecretCode = String.format("%04d", random.nextInt(10000));
+        System.out.println("hasło to :" + generateSecretCode);
+        System.out.println("zgaduj hasło");
+        String guessInput = sc.next();
 
+
+
+    }
+
+
+    //int pass = 1234;
 
 
 //        System.out.println("The secret code is prepared: ****.");
@@ -20,81 +33,99 @@ public class Main {
 //        System.out.println("Grade: 4 bulls.");
 //        System.out.println("Congrats! The secret code is 9876.");
 
-        Gra myGame = new Gra();
-        myGame.mainOfGame();
-
-
-
-
-    }
-}
-class Gra{
-    public void mainOfGame(){
-
-        int bulls=0;
-        int cows =0;
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Wpraowadz hasło");
-        String password= sc.next();
-        System.out.println("zgaduj hasło");
-        String guessInput=sc.next();
-
-        int[] passwordArray= new int[4];
-        int[] guessArray= new int [4];
-
-
-
-        passwordArray=new ArrayMaker().makeArrayFromString(password,passwordArray);
-        guessArray=new ArrayMaker().makeArrayFromString(guessInput,guessArray);
-
-        bulls=new ArrayMaker().checkForBulls(passwordArray,guessArray);
-        cows=new ArrayMaker().checkForCows(passwordArray,guessArray);
-
-        System.out.println("liczba byków: "+bulls+" cows "+cows);
-
-
-
-
-
-
-
-    }
+//        Gra myGame = new Gra();
+//        myGame.mainOfGame();
 
 
 }
-class ArrayMaker{
+//}
+//class Gra{
+//    public void mainOfGame(){
+//
+//        int bulls=0;
+//        int cows =0;
+//
+//        Scanner sc = new Scanner(System.in);
+//
+//        Random random = new Random();
+//
+//        String generateSecretCode = String.format("%04d", random.nextInt(10000));
+//
+//        System.out.println("hasło to :" + generateSecretCode);
+//
+//
+//        do{
+//        System.out.println("zgaduj hasło");
+//        String guessInput=sc.next();
+//
+//        int[] passwordArray= new int[4];
+//        int[] guessArray= new int [4];
+//
+//
+//
+//        //passwordArray=new ArrayMaker().makeArrayFromString(password,passwordArray);
+//
+//        passwordArray=new ArrayMaker().makeArrayFromString(String.valueOf(generateSecretCode),passwordArray);
+//        guessArray=new ArrayMaker().makeArrayFromString(guessInput,guessArray);
+//
+//        bulls=new ArrayMaker().checkForBulls(passwordArray,guessArray);
+//        cows=new ArrayMaker().checkForCows(passwordArray,guessArray);
+//
+//        System.out.println("liczba byków: "+bulls+" cows "+cows);}
+//        while (bulls == 4);
+//
+//
+//
+//
+//
+//
+//
+//    }
 
 
-  public int[] makeArrayFromString(String string,int[] array){
-
-        for (int i=0;i<array.length;i++){
-            array[i]=Integer.parseInt(string.substring(i,i+1));
-        }
-        return array;
-    }
-  public int checkForBulls (int[] password,int[] guess){
-      int bulls=0;
-      for (int i=0; i< password.length;i++){
-          if (password[i]==guess[i]){
-              bulls++;
-          }
-      }
-      return bulls;
-    }
-
-
-  public int checkForCows (int[] password,int[] guess){
-        int cows=0;
-
-
-        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
-      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
-      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
-      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
-        return cows;
-    }
-
-
-}
+//}
+//class ArrayMaker{
+//
+//    public int[]  makeArrayFromInt(int[] array, String sas){
+//
+//
+//
+//        for (int i =0; i<=array.length;i++){
+//            array[i]=sas.charAt(i);
+//
+//        }
+//        return  array;
+//    }
+//
+//
+//  public int[] makeArrayFromString(String string,int[] array){
+//
+//        for (int i=0;i<array.length;i++){
+//            array[i]=Integer.parseInt(string.substring(i,i+1));
+//        }
+//        return array;
+//    }
+//  public int checkForBulls (int[] password,int[] guess){
+//      int bulls=0;
+//      for (int i=0; i< password.length;i++){
+//          if (password[i]==guess[i]){
+//              bulls++;
+//          }
+//      }
+//      return bulls;
+//    }
+//
+//
+//  public int checkForCows (int[] password,int[] guess){
+//        int cows=0;
+//
+//
+//        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
+//      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
+//      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
+//      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
+//        return cows;
+//    }
+//
+//
+//}
