@@ -22,7 +22,7 @@ files:
 feedback_link: https://hyperskill.org/learn/step/3813#comment
 status: Failed
 feedback:
-  message: |
+  message: |+
     Failed test #1 of 5. Wrong answer
 
     This is a sample test from the problem statement!
@@ -33,6 +33,6 @@ feedback:
     Testinput
 
     Your code output:
-    T7esti1nput
-  time: Tue, 19 Jan 2021 22:13:41 UTC
+
+  time: Tue, 19 Jan 2021 22:41:28 UTC
 record: -1

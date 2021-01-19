@@ -18,9 +18,15 @@ class ConcatenateStringsProblem {
         char nine = '9';
         char space = ' ';
 
+        StringBuilder sbb = new StringBuilder();
+
+
 
         for ( int i =0; i<strings.length;i++){
-            System.out.println(strings[i]);
+            if(strings[i].equals("e")){
+                sbb.append(strings[i]);
+            }
+
         }
 
 //
@@ -75,7 +81,7 @@ class ConcatenateStringsProblem {
 
 
 
-        return stringBuilder.toString();
+        return sbb.toString();
 
 
     }
