@@ -14,10 +14,7 @@ class Main {
         double firstRoot = (-b + sqrt)/(2*a);
         double secondRoot = (-b - sqrt)/(2*a);
 
-        if(firstRoot<secondRoot){
-            System.out.println(firstRoot +" "+secondRoot);
-        }
-        else{ System.out.println(secondRoot +" "+firstRoot);}
+        System.out.println(Math.min(firstRoot,secondRoot)+" "+Math.max(firstRoot,secondRoot));
 
 
 
