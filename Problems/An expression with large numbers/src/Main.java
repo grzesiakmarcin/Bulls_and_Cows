@@ -14,7 +14,7 @@ class Main {
         BigInteger c = new BigInteger(s[2]);
         BigInteger d = new BigInteger(s[3]);
 
-        System.out.println(a.negate().multiply(b).add(c.subtract(d)));
+        System.out.println(a.negate().multiply(b).add(c).subtract(d));
 
 
     }
