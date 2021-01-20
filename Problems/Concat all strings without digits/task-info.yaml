@@ -20,19 +20,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/3813#comment
-status: Failed
+status: Solved
 feedback:
-  message: |+
-    Failed test #1 of 5. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    T7est i1nput
-    Correct output:
-    Testinput
-
-    Your code output:
-
-  time: Tue, 19 Jan 2021 22:41:28 UTC
+  message: <html>Correct solution</html>
+  time: Wed, 20 Jan 2021 10:56:33 UTC
 record: -1

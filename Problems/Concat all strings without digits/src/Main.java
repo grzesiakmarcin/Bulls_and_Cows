@@ -5,31 +5,39 @@ class ConcatenateStringsProblem {
     public static String concatenateStringsWithoutDigits(String[] strings) {
 
 
-        StringBuilder stringBuilder= new StringBuilder();
-
-        char one = '1';
-        char two = '2';
-        char three = '3';
-        char four ='4';
-        char five = '5';
-        char six = '6';
-        char seven = '7';
-        char eight = '8';
-        char nine = '9';
-        char space = ' ';
-
         StringBuilder sbb = new StringBuilder();
+        StringBuilder result = new StringBuilder();
 
 
+        for (String element : strings) {
+            sbb.append(element);
+        }
 
-        for ( int i =0; i<strings.length;i++){
-            if(strings[i].equals("e")){
-                sbb.append(strings[i]);
+        char[] tablica = sbb.toString().toCharArray();
+
+        for (char element : tablica) {
+
+            if (element != '0' &&
+                    element != '1' &&
+                    element != '2' &&
+                    element != '3' &&
+                    element != '4' &&
+                    element != '5' &&
+                    element != '6' &&
+                    element != '7' &&
+                    element != '8' &&
+                    element != '9' &&
+                    element != ' ') {
+
+                result.append(element);
             }
+
 
         }
 
-//
+
+        return result.toString();
+
 //        for (String cosik:strings) {
 //            stringBuilder.append(cosik);
 //
@@ -76,12 +84,6 @@ class ConcatenateStringsProblem {
 //
 //            }
 //        }
-
-
-
-
-
-        return sbb.toString();
 
 
     }
