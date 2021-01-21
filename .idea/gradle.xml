@@ -12,9 +12,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Bulls and Cows/task" />
+            <option value="$PROJECT_DIR$/Problems (1)/Double factorial" />
+            <option value="$PROJECT_DIR$/Problems (2)/30 years before and after" />
             <option value="$PROJECT_DIR$/Problems/An expression with large numbers" />
             <option value="$PROJECT_DIR$/Problems/Comparing numbers" />
             <option value="$PROJECT_DIR$/Problems/Concat all strings without digits" />
+            <option value="$PROJECT_DIR$/Problems/Double factorial" />
             <option value="$PROJECT_DIR$/Problems/Generate random numbers" />
             <option value="$PROJECT_DIR$/Problems/Heron's formula" />
             <option value="$PROJECT_DIR$/Problems/Pow" />
