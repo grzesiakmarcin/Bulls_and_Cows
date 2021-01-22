@@ -5,9 +5,8 @@ class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         LocalDateTime input = LocalDateTime.parse(sc.next());
-        LocalDateTime newOne= input.plusHours(11);
 
-        System.out.println(newOne.toLocalDate());
+        System.out.println(input.plusHours(11).toLocalDate());
 
     }
 }
