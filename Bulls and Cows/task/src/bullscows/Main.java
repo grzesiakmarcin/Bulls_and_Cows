@@ -12,7 +12,7 @@ public class Main {
         System.out.println("hasło to :" + generateSecretCode);
         System.out.println("zgaduj hasło");
         String guessInput = sc.next();
-
+        
 
 
     }

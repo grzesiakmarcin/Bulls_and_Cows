@@ -13,12 +13,16 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Bulls and Cows/task" />
             <option value="$PROJECT_DIR$/Problems (1)/Double factorial" />
+            <option value="$PROJECT_DIR$/Problems (10)/Add 11 hours and print the date" />
+            <option value="$PROJECT_DIR$/Problems (11)/Add 11 hours and print the date" />
             <option value="$PROJECT_DIR$/Problems (2)/30 years before and after" />
             <option value="$PROJECT_DIR$/Problems (3)/Getting information on a day" />
             <option value="$PROJECT_DIR$/Problems (4)/Find all mondays" />
             <option value="$PROJECT_DIR$/Problems (5)/Seconds since start of a day" />
             <option value="$PROJECT_DIR$/Problems (6)/Return time without seconds" />
             <option value="$PROJECT_DIR$/Problems (7)/Seconds between two time points" />
+            <option value="$PROJECT_DIR$/Problems (8)/Add days and subtract hours" />
+            <option value="$PROJECT_DIR$/Problems (9)/Merging date-time instances" />
             <option value="$PROJECT_DIR$/Problems/An expression with large numbers" />
             <option value="$PROJECT_DIR$/Problems/Comparing numbers" />
             <option value="$PROJECT_DIR$/Problems/Concat all strings without digits" />

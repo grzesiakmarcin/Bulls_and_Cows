@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -12,6 +13,9 @@ public class Main {
 
 
         System.out.println(Math.abs(secondInput.toSecondOfDay()-firstInput.toSecondOfDay()));
+
+        LocalDateTime onr = LocalDateTime.MAX;
+        System.out.println(onr);
 
     }
 }
