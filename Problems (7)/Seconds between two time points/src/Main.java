@@ -9,11 +9,9 @@ public class Main {
 
         LocalTime firstInput = LocalTime.parse(scanner.next());
         LocalTime secondInput = LocalTime.parse(scanner.next());
-//        LocalTime inBetween = LocalTime.
 
 
-
-        System.out.println(Math.max(secondInput.toSecondOfDay(),firstInput.toSecondOfDay())-Math.min(secondInput.toSecondOfDay(),firstInput.toSecondOfDay()) );
+        System.out.println(Math.abs(secondInput.toSecondOfDay()-firstInput.toSecondOfDay()));
 
     }
 }
