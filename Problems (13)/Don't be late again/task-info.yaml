@@ -1,0 +1,21 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class Main {
+        public static void main(String[] args) {
+            // put your code here
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2898#comment
+status: Failed
+feedback:
+  message: "Failed test #1 of 4. Wrong answer\n\nThis is a sample test from the problem\
+    \ statement!\n\nTest input:\n4\nTastyday 20:30\nFood 20:00\nZehrs 19:00\nBonus\
+    \ 20:20\nCorrect output:\nTastyday\nBonus\n\nYour code output:\nTastyday kolejny\
+    \ 20:30 kolejny \nFood kolejny 20:00 kolejny \nZehrs kolejny 19:00 kolejny \n\
+    Bonus kolejny 20:20 kolejny\n"
+  time: Fri, 22 Jan 2021 22:52:04 UTC
+record: -1
