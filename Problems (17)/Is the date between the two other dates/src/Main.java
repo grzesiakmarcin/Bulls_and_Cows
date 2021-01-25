@@ -9,7 +9,8 @@ class Main {
         LocalDate n = LocalDate.parse(sc.next());
         boolean answer=false;
 
-        if(x.isAfter(m)&& x.isBefore(n)||x.isAfter(n)&& x.isBefore(m)){
+        if(x.isAfter(m)&& x.isBefore(n)||
+           x.isAfter(n)&& x.isBefore(m)   ){
             answer = true;
         }
 
