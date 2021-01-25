@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-25T13:27:34" hostname="DESKTOP-4RRBCPT" time="0.23">
+<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-25T14:07:13" hostname="DESKTOP-4RRBCPT" time="0.155">
   <properties/>
-  <testcase name="start" classname="BullsCowsTest" time="0.23"/>
+  <testcase name="start" classname="BullsCowsTest" time="0.155"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 7637
-zgaduj hasło
 > 3601
-Grade: 1 bull(s) and 1 cow(s). The secret code is 7637.
+Grade: 1 bull(s). The secret code is 8771.
 ?[1;31m
 Start test 2?[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 9643
-zgaduj hasło
-> 7637
-Grade: 1 bull(s) and 1 cow(s). The secret code is 9643.
+> 8771
+Grade: 1 cow(s). The secret code is 4998.
 ?[1;31m
 Start test 3?[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 8526
-zgaduj hasło
-> 1257
-Grade: 2 cow(s). The secret code is 8526.
+> 1235
+Grade: 1 cow(s). The secret code is 4349.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

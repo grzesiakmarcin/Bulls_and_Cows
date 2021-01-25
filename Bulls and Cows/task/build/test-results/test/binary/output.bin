@@ -2,23 +2,17 @@
 Start test 1[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 7637
-zgaduj hasło
 > 3601
-9Grade: 1 bull(s) and 1 cow(s). The secret code is 7637.
+,Grade: 1 bull(s). The secret code is 8771.
 [1;31m
 Start test 2[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 9643
-zgaduj hasło
-> 7637
-9Grade: 1 bull(s) and 1 cow(s). The secret code is 9643.
+> 8771
++Grade: 1 cow(s). The secret code is 4998.
 [1;31m
 Start test 3[0m
 Trwa generowanie hasla
  Podaj swój typ:
-Wygenerowano: 8526
-zgaduj hasło
-> 1257
-+Grade: 2 cow(s). The secret code is 8526.
+> 1235
++Grade: 1 cow(s). The secret code is 4349.
