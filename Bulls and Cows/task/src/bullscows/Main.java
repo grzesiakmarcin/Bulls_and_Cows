@@ -6,17 +6,41 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Random random = new Random();
+
         Scanner sc = new Scanner(System.in);
-        String generateSecretCode = String.format("%04d", random.nextInt(10000));
-        System.out.println("hasło to :" + generateSecretCode);
+        int pass = new Game().generatePassword();
+        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
+        System.out.println("Wygenerowano: "+pass);
         System.out.println("zgaduj hasło");
-        String guessInput = sc.next();
-        
+
+        int guessPass = sc.nextInt();
+        int [] secretNumber= new int[4];
+        int[] guessSecretNumber=new int[4];
+
+        secretNumber=new ArrayMaker().makeArrayFromInt(secretNumber,);
+
+
+
 
 
     }
+}
 
+class Game{
+
+    public int generatePassword (){
+        Random random = new Random();
+
+        int pass = random.nextInt(10000);
+
+        while (pass < 999) {
+            pass = random.nextInt(10000);
+        }
+
+
+        return pass;
+    }
+}
 
     //int pass = 1234;
 
@@ -37,7 +61,7 @@ public class Main {
 //        myGame.mainOfGame();
 
 
-}
+
 //}
 //class Gra{
 //    public void mainOfGame(){
@@ -84,48 +108,50 @@ public class Main {
 
 
 //}
-//class ArrayMaker{
-//
-//    public int[]  makeArrayFromInt(int[] array, String sas){
-//
-//
-//
-//        for (int i =0; i<=array.length;i++){
-//            array[i]=sas.charAt(i);
-//
-//        }
-//        return  array;
-//    }
-//
-//
-//  public int[] makeArrayFromString(String string,int[] array){
-//
-//        for (int i=0;i<array.length;i++){
-//            array[i]=Integer.parseInt(string.substring(i,i+1));
-//        }
-//        return array;
-//    }
-//  public int checkForBulls (int[] password,int[] guess){
-//      int bulls=0;
-//      for (int i=0; i< password.length;i++){
-//          if (password[i]==guess[i]){
-//              bulls++;
-//          }
-//      }
-//      return bulls;
-//    }
-//
-//
-//  public int checkForCows (int[] password,int[] guess){
-//        int cows=0;
-//
-//
-//        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
-//      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
-//      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
-//      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
-//        return cows;
-//    }
-//
-//
-//}
+class ArrayMaker{
+
+    public int[]  makeArrayFromInt(int[] array, int sas){
+
+        String robimyStirnga = String.valueOf(sas);
+
+
+        for (int i =0; i<=array.length;i++){
+            array[i]=robimyStirnga.charAt(i);
+
+        }
+        return  array;
+    }
+
+
+  public int[] makeArrayFromString(String string,int[] array){
+
+        for (int i=0;i<array.length;i++){
+            array[i]=Integer.parseInt(string.substring(i,i+1));
+        }
+        return array;
+    }
+
+  public int checkForBulls (int[] password,int[] guess){
+      int bulls=0;
+      for (int i=0; i< password.length;i++){
+          if (password[i]==guess[i]){
+              bulls++;
+          }
+      }
+      return bulls;
+    }
+
+
+  public int checkForCows (int[] password,int[] guess){
+        int cows=0;
+
+
+        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
+      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
+      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
+      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
+        return cows;
+    }
+
+
+}
