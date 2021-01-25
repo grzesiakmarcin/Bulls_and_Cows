@@ -14,10 +14,25 @@ public class Main {
         System.out.println("zgaduj hasło");
 
         int guessPass = sc.nextInt();
-        int [] secretNumber= new int[4];
-        int[] guessSecretNumber=new int[4];
+        int[] secretNumberArray= new int[4];
+        int[] guessSecretArray=new int[4];
 
-        secretNumber=new ArrayMaker().makeArrayFromInt(secretNumber,);
+        secretNumberArray=new ArrayMaker().makeArrayFromInt(secretNumberArray,pass);
+        guessSecretArray=new ArrayMaker().makeArrayFromInt(guessSecretArray,guessPass);
+
+        int bulls=0;
+        int cows=0;
+
+        bulls=new Game().checkForBulls(secretNumberArray,guessSecretArray);
+        cows=new Game().checkForCows(secretNumberArray,guessSecretArray);
+
+
+
+        if(cows>0 && bulls ==0){System.out.println("Grade: "+cows+" cow(s). The secret code is "+pass+".");}
+        else if(cows==0 && bulls>0){System.out.println("Grade: "+bulls+" bull(s). The secret code is "+pass+".");}
+        else if(cows >0 && bulls>0) {System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s). The secret code is " + pass + ".");}
+        else if(cows==0 && bulls==0){System.out.println("Grade: None. The secret code is "+pass+".");}
+
 
 
 
@@ -39,6 +54,29 @@ class Game{
 
 
         return pass;
+
+    }
+
+    public int checkForBulls (int[] password,int[] guess){
+        int bulls=0;
+        for (int i=0; i< password.length;i++){
+            if (password[i]==guess[i]){
+                bulls++;
+            }
+        }
+        return bulls;
+    }
+
+
+    public int checkForCows (int[] password,int[] guess){
+        int cows=0;
+
+
+        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
+        if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
+        if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
+        if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
+        return cows;
     }
 }
 
@@ -114,8 +152,7 @@ class ArrayMaker{
 
         String robimyStirnga = String.valueOf(sas);
 
-
-        for (int i =0; i<=array.length;i++){
+        for (int i =0; i<array.length;i++){
             array[i]=robimyStirnga.charAt(i);
 
         }
@@ -131,27 +168,7 @@ class ArrayMaker{
         return array;
     }
 
-  public int checkForBulls (int[] password,int[] guess){
-      int bulls=0;
-      for (int i=0; i< password.length;i++){
-          if (password[i]==guess[i]){
-              bulls++;
-          }
-      }
-      return bulls;
-    }
 
-
-  public int checkForCows (int[] password,int[] guess){
-        int cows=0;
-
-
-        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
-      if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
-      if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
-      if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
-        return cows;
-    }
 
 
 }

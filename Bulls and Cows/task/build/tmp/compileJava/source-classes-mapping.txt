@@ -1,4 +1,4 @@
 bullscows/Main.java
  bullscows.ArrayMaker
- bullscows.Gra
+ bullscows.Game
  bullscows.Main

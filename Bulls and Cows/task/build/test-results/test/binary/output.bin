@@ -1,6 +1,24 @@
 [1;31m
 Start test 1[0m
-hasło to :5726
+Trwa generowanie hasla
+ Podaj swój typ:
+Wygenerowano: 7637
 zgaduj hasło
 > 3601
-liczba byków: 0 cows 1
+9Grade: 1 bull(s) and 1 cow(s). The secret code is 7637.
+[1;31m
+Start test 2[0m
+Trwa generowanie hasla
+ Podaj swój typ:
+Wygenerowano: 9643
+zgaduj hasło
+> 7637
+9Grade: 1 bull(s) and 1 cow(s). The secret code is 9643.
+[1;31m
+Start test 3[0m
+Trwa generowanie hasla
+ Podaj swój typ:
+Wygenerowano: 8526
+zgaduj hasło
+> 1257
++Grade: 2 cow(s). The secret code is 8526.
