@@ -8,33 +8,16 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        int pass = new Game().generatePassword();
-        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
         //System.out.println("Wygenerowano: "+pass);
+        int passLength = sc.nextInt();
+        if (passLength > 10) {
+            System.out.println("Error: can't generate a secret number with a length of 11 because" +
+                    " there aren't enough unique digits.");
+            System.exit(1);
+        } else
 
-        int guessPass = sc.nextInt();
-        int[] secretNumberArray = new int[4];
-        int[] guessSecretArray = new int[4];
-
-        secretNumberArray = new ArrayMaker().makeArrayFromInt(secretNumberArray, pass);
-        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, guessPass);
-
-        int bulls = 0;
-        int cows = 0;
-
-        bulls = new Game().checkForBulls(secretNumberArray, guessSecretArray);
-        cows = new Game().checkForCows(secretNumberArray, guessSecretArray);
-
-
-        if (cows > 0 && bulls == 0) {
-            System.out.println("Grade: " + cows + " cow(s). The secret code is " + pass + ".");
-        } else if (cows == 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s). The secret code is " + pass + ".");
-        } else if (cows > 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s). The secret code is " + pass + ".");
-        } else if (cows == 0 && bulls == 0) {
-            System.out.println("Grade: None. The secret code is " + pass + ".");
-        }
+            System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
+        int pass = new Game().generatePassword();
 
 
     }
@@ -42,18 +25,50 @@ public class Main {
 
 class Game {
 
-    public int generatePassword() {
-        Random random = new Random();
+    public int generatePassword(int passLenght) {
+        long pseudoRandomNumber = System.nanoTime();
 
-        int pass = random.nextInt(10000);
 
-        while (pass < 999) {
-            pass = random.nextInt(10000);
+        switch(passLenght) {
+            case 1:
+
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+
         }
 
 
-        return pass;
 
+    }
+
+
+    public static int customLenghtPassGenerator(int howManyDigits){
+        long pseudoRandomNumber = System.nanoTime();
+
+        StringBuilder sb = new StringBuilder("1");
+
+        for(int i=0; i>howManyDigits;i++){
+            sb.append(charAt)
+
+        }
+
+
+        return
     }
 
     public int checkForBulls(int[] password, int[] guess) {
@@ -116,6 +131,34 @@ class ArrayMaker {
     }
 
 
+}
+
+class Jumanji {
+    public void puszczamyGre() {
+        int guessPass = sc.nextInt();
+        int[] secretNumberArray = new int[passLength];
+        int[] guessSecretArray = new int[passLength];
+
+        secretNumberArray = new ArrayMaker().makeArrayFromInt(secretNumberArray, pass);
+        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, guessPass);
+
+        int bulls = 0;
+        int cows = 0;
+
+        bulls = new Game().checkForBulls(secretNumberArray, guessSecretArray);
+        cows = new Game().checkForCows(secretNumberArray, guessSecretArray);
+
+
+        if (cows > 0 && bulls == 0) {
+            System.out.println("Grade: " + cows + " cow(s). The secret code is " + pass + ".");
+        } else if (cows == 0 && bulls > 0) {
+            System.out.println("Grade: " + bulls + " bull(s). The secret code is " + pass + ".");
+        } else if (cows > 0 && bulls > 0) {
+            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s). The secret code is " + pass + ".");
+        } else if (cows == 0 && bulls == 0) {
+            System.out.println("Grade: None. The secret code is " + pass + ".");
+        }
+    }
 }
 
 

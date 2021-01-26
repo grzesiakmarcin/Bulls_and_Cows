@@ -1,40 +1,25 @@
 import java.math.BigInteger;
+import java.util.Scanner;
 
 class DoubleFactorial {
     public static BigInteger calcDoubleFactorial(int n) {
 
-//
-//        BigInteger result = new BigInteger(String.valueOf(n));
-//
-//        int cyferka = n - 2;
-//
-//
-//        for (int i = cyferka; i >= 0; i = i - 2) {
-//
-//            result = result.multiply(new BigInteger(String.valueOf(i)));
-//
-//        }
-//
-//
-//        if (n == 1|| n==0) {
-//            return BigInteger.ONE;
-//        } else if (n == 2) {
-//            return BigInteger.TWO;
-//
-//        } else
-//            return result;
+
+
+        BigInteger m = new BigInteger(String.valueOf(n));
+        return liczymy(BigInteger.valueOf(n));
+
+
     }
 
-public static BigInteger doubleFactorial(int m){
-        if (m == 0 || m == 1) {
+    public static BigInteger liczymy(BigInteger liczba) {
+        if (liczba.equals(BigInteger.ONE)) {
             return BigInteger.ONE;
-        } else if (m == 2) {
-            return BigInteger.TWO;
-        } else {
-            return BigInteger(m) factorial(n - 1); // the recursive call
+        } else if (liczba.equals(BigInteger.ZERO)) {
+            return BigInteger.ZERO;
+
         }
+
+        return new BigInteger(String.valueOf(liczba)).multiply(liczymy(liczba.subtract(BigInteger.TWO)));
     }
-
-
-
 }
