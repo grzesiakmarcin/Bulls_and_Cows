@@ -1,9 +1,7 @@
 class Primitive {
     public static boolean toPrimitive(Boolean b) {
 
-        boolean sa = b !=null ? true :false ;
-
-
-        return sa;
+    boolean result =b!=null ? b:false;
+        return result;
     }
 }

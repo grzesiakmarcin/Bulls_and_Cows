@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Main {
 
     public static int convert(Long val) {
-        int result;
+       
 
         if (val ==null) {
-            result = 0;
+            return 0;
         } else if (val < Integer.MIN_VALUE) {
-            result = Integer.MIN_VALUE;
+            return Integer.MIN_VALUE;
         } else if (val>Integer.MAX_VALUE) {
-            result = Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;
         } else {
-            result = val.intValue();
+            return val.intValue();
 
         }
 
-        return result;
+
     }
 
     /* Do not change code below */

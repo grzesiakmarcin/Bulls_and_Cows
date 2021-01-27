@@ -10,19 +10,5 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/3014#comment
-status: Failed
-feedback:
-  message: |
-    Failed test #2 of 3. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    false
-    Correct output:
-    false
-
-    Your code output:
-    true
-  time: Mon, 25 Jan 2021 19:31:26 UTC
+status: Solved
 record: -1
