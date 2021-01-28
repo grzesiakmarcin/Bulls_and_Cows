@@ -20,6 +20,12 @@ feedback_link: https://hyperskill.org/learn/step/3002#comment
 status: Failed
 feedback:
   message: |
-    Failed test #1 of 5. Wrong answer
-  time: Thu, 28 Jan 2021 17:45:34 UTC
+    Compilation error
+    Main.java:22: error: cannot find symbol
+                return String.String.valueOf(incik);
+                             ^
+      symbol:   variable String
+      location: class String
+    1 error
+  time: Thu, 28 Jan 2021 17:52:39 UTC
 record: -1

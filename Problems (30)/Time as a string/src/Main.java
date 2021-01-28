@@ -9,16 +9,10 @@ class Time {
         this.minutes = minutes;
         this.seconds = seconds;
 
-
     }
 
     public String addZero(int incik){
-
-        if(incik <10){
-            return "0"+ String.valueOf(incik);
-        }
-        else
-            return String.String.valueOf(incik);
+        return 
     }
 
     @java.lang.Override
