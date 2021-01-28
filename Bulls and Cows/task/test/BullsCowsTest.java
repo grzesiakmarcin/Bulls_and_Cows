@@ -17,7 +17,7 @@ public class BullsCowsTest extends StageTest<String> {
     // basic test case
     @DynamicTestingMethod
     CheckResult test1() {
-        TestedProgram main = new TestedProgram(Main.class);
+        TestedProgram main = new TestedProgram();
         main.start();
         String output = main.execute("4").toLowerCase().trim();
 
@@ -26,7 +26,7 @@ public class BullsCowsTest extends StageTest<String> {
 
     @DynamicTestingMethod
     CheckResult test2() {
-        TestedProgram main = new TestedProgram(Main.class);
+        TestedProgram main = new TestedProgram();
         main.start();
         String output = main.execute("1").toLowerCase().trim();
 
@@ -36,7 +36,7 @@ public class BullsCowsTest extends StageTest<String> {
     // test of incorrect input
     @DynamicTestingMethod
     CheckResult test4() {
-        TestedProgram main = new TestedProgram(Main.class);
+        TestedProgram main = new TestedProgram();
         main.start();
         String output = main.execute("11").toLowerCase().trim();
 
@@ -45,7 +45,7 @@ public class BullsCowsTest extends StageTest<String> {
 
     @DynamicTestingMethod
     CheckResult test5() {
-        TestedProgram main = new TestedProgram(Main.class);
+        TestedProgram main = new TestedProgram();
         main.start();
         String output = main.execute("6").toLowerCase().trim();
 
@@ -54,7 +54,7 @@ public class BullsCowsTest extends StageTest<String> {
 
     @DynamicTestingMethod
     CheckResult test6() {
-        TestedProgram main = new TestedProgram(Main.class);
+        TestedProgram main = new TestedProgram();
         main.start();
         String output = main.execute("3").toLowerCase().trim();
 
