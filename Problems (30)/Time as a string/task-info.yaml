@@ -17,15 +17,5 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/3002#comment
-status: Failed
-feedback:
-  message: |
-    Compilation error
-    Main.java:22: error: cannot find symbol
-                return String.String.valueOf(incik);
-                             ^
-      symbol:   variable String
-      location: class String
-    1 error
-  time: Thu, 28 Jan 2021 17:52:39 UTC
+status: Solved
 record: -1
