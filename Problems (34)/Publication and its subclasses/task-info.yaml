@@ -65,19 +65,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/4331#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed test #2 of 8. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    Newspaper; Football results; Sport news
-    Correct output:
-    Newspaper (source - Sport news): Football results
-
-    Your code output:
-    Newspaper: Sport news
-  time: Thu, 28 Jan 2021 22:16:02 UTC
+  message: <html>Correct solution</html>
+  time: Fri, 29 Jan 2021 14:14:06 UTC
 record: -1

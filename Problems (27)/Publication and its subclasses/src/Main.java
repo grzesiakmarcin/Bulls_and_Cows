@@ -3,20 +3,19 @@ class Publication {
     private String title;
 
     public Publication(String title) {
-
         this.title = title;
     }
 
     public final String getInfo() {
-     return getType()+getDetails();
+      return getType()+getDetails();
     }
 
     public String getType() {
-        return title;
+        return "Publication: ";
     }
 
     public String getDetails() {
-        return "";
+        return title;
     }
 
 }
@@ -28,17 +27,16 @@ class Newspaper extends Publication {
     public Newspaper(String title, String source) {
         super(title);
         this.source = source;
-
     }
 
     @Override
     public String getType() {
-        return super.getType();
+        return "Newspaper: ";
     }
 
     @Override
     public String getDetails() {
-        return super.getDetails();
+        return source;
     }
 }
 
@@ -51,15 +49,8 @@ class Article extends Publication {
         this.author = author;
     }
 
-    @Override
-    public String getType() {
-        return super.getType();
-    }
+    // write your code here
 
-    @Override
-    public String getDetails() {
-        return super.getDetails();
-    }
 }
 
 class Announcement extends Publication {
@@ -71,14 +62,6 @@ class Announcement extends Publication {
         this.daysToExpire = daysToExpire;
     }
 
+    // write your code here
 
-    @Override
-    public String getType() {
-        return super.getType();
-    }
-
-    @Override
-    public String getDetails() {
-        return super.getDetails();
-    }
 }
