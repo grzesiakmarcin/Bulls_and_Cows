@@ -8,16 +8,14 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        //System.out.println("Wygenerowano: "+pass);
+
         int passLength = sc.nextInt();
         if (passLength > 10) {
             System.out.println("Error: can't generate a secret number with a length of 11 because" +
                     " there aren't enough unique digits.");
             System.exit(1);
         } else
-
             System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
-        int pass = new Game().generatePassword();
 
 
     }
@@ -25,18 +23,21 @@ public class Main {
 
 class Game {
 
-    public int generatePassword(int passLenght) {
-        long pseudoRandomNumber = System.nanoTime();
+    public String passsssssGenerator(int passLenght) {
 
+        String rezultat = "";
 
-        switch(passLenght) {
+        switch (passLenght) {
             case 1:
-
+                rezultat = String.valueOf(new ArrayMaker().cyfraRoznaOdZera());
                 break;
             case 2:
+
                 break;
+
             case 3:
                 break;
+
             case 4:
                 break;
             case 5:
@@ -52,24 +53,9 @@ class Game {
 
         }
 
-
-
+        return rezultat;
     }
 
-
-    public static int customLenghtPassGenerator(int howManyDigits){
-        long pseudoRandomNumber = System.nanoTime();
-
-        StringBuilder sb = new StringBuilder("1");
-
-        for(int i=0; i>howManyDigits;i++){
-            sb.append(charAt)
-
-        }
-
-
-        return
-    }
 
     public int checkForBulls(int[] password, int[] guess) {
         int bulls = 0;
@@ -98,14 +84,25 @@ class Game {
             }
         }
 
-
-//
-//        if(guess[0]==password[1]||guess[0]==password[2]||guess[0]==password[3]){cows++;}
-//        if(guess[1]==password[0]||guess[1]==password[2]||guess[1]==password[3]){cows++;}
-//        if(guess[2]==password[0]||guess[2]==password[1]||guess[2]==password[3]){cows++;}
-//        if(guess[3]==password[1]||guess[3]==password[2]||guess[3]==password[0]){cows++;}
         return cows;
     }
+
+
+
+    public int[] case5(){
+        int[] haslo = {0,0,0,0,0};
+        haslo[0]=new ArrayMaker().cyfraRoznaOdZera();
+
+
+        for (int i=1; i<5;i++){
+
+
+        }
+
+
+
+
+    return haslo;
 }
 
 class ArrayMaker {
@@ -129,6 +126,42 @@ class ArrayMaker {
         }
         return array;
     }
+
+    public int[] makeArrayFromString(StringBuilder string, int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Integer.parseInt(string.substring(i, i + 1));
+        }
+        return array;
+    }
+
+
+    public int cyfraRoznaOdZera() {
+        Random cyfra = new Random();
+        int randomDigit = 0;
+
+        while (randomDigit == 0) {
+            randomDigit = cyfra.nextInt(10);
+        }
+
+        return randomDigit;
+    }
+
+    public int cyfralosowa() {
+        return new Random().nextInt(10);
+    }
+
+    public int rekurencja(int input){
+       int losuj = cyfralosowa();
+
+        if (losuj==input){rekurencja(input);}
+
+
+            return losuj;
+    }
+
+    }
+
 
 
 }

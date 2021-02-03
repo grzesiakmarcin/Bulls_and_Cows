@@ -65,19 +65,5 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/4331#comment
-status: Failed
-feedback:
-  message: |
-    Failed test #1 of 8. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    Publication; The new era
-    Correct output:
-    Publication: The new era
-
-    Your code output:
-    The new era
-  time: Wed, 27 Jan 2021 20:54:14 UTC
+status: Solved
 record: -1

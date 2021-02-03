@@ -18,6 +18,9 @@ class Publication {
         return title;
     }
 
+    public String getTitle() {
+        return title;
+    }
 }
 
 class Newspaper extends Publication {
@@ -31,12 +34,12 @@ class Newspaper extends Publication {
 
     @Override
     public String getType() {
-        return "Newspaper: ";
+        return "Newspaper ";
     }
 
     @Override
     public String getDetails() {
-        return source;
+        return "(source - "+source+"): "+getTitle();
     }
 }
 
@@ -49,8 +52,17 @@ class Article extends Publication {
         this.author = author;
     }
 
-    // write your code here
 
+
+    @Override
+    public String getType() {
+        return "Article ";
+    }
+
+    @Override
+    public String getDetails() {
+        return "(author - "+author+"): "+getTitle();
+    }
 }
 
 class Announcement extends Publication {
@@ -61,7 +73,14 @@ class Announcement extends Publication {
         super(title);
         this.daysToExpire = daysToExpire;
     }
+    @Override
+    public String getType() {
+        return "Announcement ";
+    }
 
-    // write your code here
+    @Override
+    public String getDetails() {
+        return "(days to expire - "+daysToExpire+"): "+getTitle();
+    }
 
 }
