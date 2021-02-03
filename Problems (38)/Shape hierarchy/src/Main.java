@@ -11,7 +11,7 @@ class Triangle extends Shape{
     double a;
     double b;
     double c;
-    double p = 0.5*(a+b+c);
+
 
     public Triangle(double a, double b, double c) {
         this.a = a;
@@ -26,6 +26,7 @@ class Triangle extends Shape{
 
         @Override
         double getArea() {
+            double p = 0.5*(a+b+c);
             return Math.sqrt(p*(p-a)*(p-b)*(p-c));
         }
 
