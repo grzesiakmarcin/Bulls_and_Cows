@@ -8,34 +8,37 @@ abstract class IntBinaryOperation {
         this.secondArg = secondArg;
     }
 
-    public abstract int perform(int firstArg,int secondArg);
+    public abstract int perform();
 }
-class Addition extends IntBinaryOperation{
-    int jeden;
-    int dwa;
-    
-    public Addition (int jeden, int dwa){
-        super(jeden,dwa);
+
+
+
+class Addition extends  IntBinaryOperation{
+    int firstArg;
+    int secondArg;
+
+    public Addition(int firstArg, int secondArg) {
+        super(firstArg,secondArg);
+
     }
-    
-    
+
     @Override
-    public int perform(int jeden, int dwa){
-        return jeden+dwa;
+    public int perform(){
+        int result= firstArg+secondArg;
+        return result;
     }
 }
-class Multiplication extends IntBinaryOperation{
-    int jeden;
-    int dwa;
-    
-    public Multiplication (int jeden, int dwa){
-        super(jeden,dwa);
+class Multiplication extends IntBinaryOperation {
+   int firstArg;
+   int secondArg;
+
+    public Multiplication (int firstArg, int secondArg){
+        super(firstArg,secondArg);
     }
-    
-    
+
     @Override
-    public int perform(int jeden, int dwa){
-        return jeden*dwa;
+    public int perform() {
+         int result= firstArg*secondArg;
+        return result;
     }
 }
-// declare and implement your classes here

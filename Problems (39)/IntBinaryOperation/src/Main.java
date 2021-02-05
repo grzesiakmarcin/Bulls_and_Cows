@@ -11,4 +11,34 @@ abstract class IntBinaryOperation {
     public abstract int perform();
 }
 
-// declare and implement your classes here
+
+
+class Addition extends  IntBinaryOperation{
+    int firstArg;
+    int secondArg;
+
+    public Addition(int firstArg, int secondArg) {
+        super(firstArg,secondArg);
+
+    }
+
+    @Override
+    public int perform(){
+        int result= firstArg+secondArg;
+        return result;
+    }
+}
+class Multiplication extends IntBinaryOperation {
+   int firstArg;
+   int secondArg;
+
+    public Multiplication (int firstArg, int secondArg){
+        super(firstArg,secondArg);
+    }
+
+    @Override
+    public int perform() {
+         int result= firstArg*secondArg;
+        return result;
+    }
+}

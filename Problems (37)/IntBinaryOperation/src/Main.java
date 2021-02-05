@@ -8,8 +8,6 @@ abstract class IntBinaryOperation {
         this.secondArg = secondArg;
     }
 
-
-
     public abstract int perform();
 }
 
@@ -18,16 +16,16 @@ abstract class IntBinaryOperation {
 class Addition extends  IntBinaryOperation{
     int firstArg;
     int secondArg;
-    public Addition(int firstArg, int secondArg) {
 
-      super(firstArg,secondArg);
+    public Addition(int firstArg, int secondArg) {
+        super(firstArg,secondArg);
 
     }
 
     @Override
     public int perform(){
-
-        return firstArg+secondArg;
+        int result= firstArg+secondArg;
+        return result;
     }
 }
 class Multiplication extends IntBinaryOperation {
@@ -35,14 +33,12 @@ class Multiplication extends IntBinaryOperation {
    int secondArg;
 
     public Multiplication (int firstArg, int secondArg){
-        super(firstArg, secondArg);
-
-
+        super(firstArg,secondArg);
     }
 
     @Override
     public int perform() {
-
-        return firstArg*secondArg;
+         int result= firstArg*secondArg;
+        return result;
     }
 }
