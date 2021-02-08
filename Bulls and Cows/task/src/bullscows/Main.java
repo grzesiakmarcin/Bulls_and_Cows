@@ -1,5 +1,6 @@
 package bullscows;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -23,39 +24,56 @@ public class Main {
 
 class Game {
 
-    public String passsssssGenerator(int passLenght) {
+    public int generuj (boolean[] tablica,int pozycja){
+        int x = cyfraRoznaOdZera();
 
-        String rezultat = "";
-
-        switch (passLenght) {
-            case 1:
-                rezultat = String.valueOf(new ArrayMaker().cyfraRoznaOdZera());
-                break;
-            case 2:
-
-                break;
-
-            case 3:
-                break;
-
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-
+        if (tablica[x]= true){
+            generuj(tablica, pozycja);
         }
 
-        return rezultat;
+
+        return x;
+
     }
 
+
+    public int cyfraRoznaOdZera() {
+        Random cyfra = new Random();
+        int randomDigit = 0;
+
+        while (randomDigit == 0) {
+            randomDigit = cyfra.nextInt(10);
+        }
+
+        return randomDigit;
+    }
+    public char charCyfraRoznaOdZera() {
+        Random cyfra = new Random();
+        int randomDigit = 0;
+
+        while (randomDigit == 0) {
+            randomDigit = cyfra.nextInt(10);
+        }
+
+        char[] tablica = String.valueOf(randomDigit).toCharArray();
+
+        return tablica[0];
+    }
+
+    public int cyfralosowa() {
+        return new Random().nextInt(10);
+    }
+
+
+    public int rekurencja(int input) {
+        int losuj = cyfralosowa();
+
+        if (losuj == input) {
+            rekurencja(input);
+        }
+
+        return losuj;
+    }
 
     public int checkForBulls(int[] password, int[] guess) {
         int bulls = 0;
@@ -86,84 +104,43 @@ class Game {
 
         return cows;
     }
-
-
-
-    public int[] case5(){
-        int[] haslo = {0,0,0,0,0};
-        haslo[0]=new ArrayMaker().cyfraRoznaOdZera
-
-        for (int i=1; i<5;i++){
-
-
-        }
-
-
-
-
-    return haslo;
 }
 
-class ArrayMaker {
+    class ArrayMaker {
 
-    public int[] makeArrayFromInt(int[] array, int sas) {
+        public int[] makeArrayFromInt(int[] array, int sas) {
 
-        String robimyStirnga = String.valueOf(sas);
+            String robimyStirnga = String.valueOf(sas);
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = robimyStirnga.charAt(i);
+            for (int i = 0; i < array.length; i++) {
+                array[i] = robimyStirnga.charAt(i);
 
-        }
-        return array;
-    }
-
-
-    public int[] makeArrayFromString(String string, int[] array) {
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] = Integer.parseInt(string.substring(i, i + 1));
-        }
-        return array;
-    }
-
-    public int[] makeArrayFromString(StringBuilder string, int[] array) {
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] = Integer.parseInt(string.substring(i, i + 1));
-        }
-        return array;
-    }
-
-
-    public int cyfraRoznaOdZera() {
-        Random cyfra = new Random();
-        int randomDigit = 0;
-
-        while (randomDigit == 0) {
-            randomDigit = cyfra.nextInt(10);
+            }
+            return array;
         }
 
-        return randomDigit;
+
+        public int[] makeArrayFromString(String string, int[] array) {
+
+            for (int i = 0; i < array.length; i++) {
+                array[i] = Integer.parseInt(string.substring(i, i + 1));
+            }
+            return array;
+        }
+
+        public int[] makeArrayFromString(StringBuilder string, int[] array) {
+
+            for (int i = 0; i < array.length; i++) {
+                array[i] = Integer.parseInt(string.substring(i, i + 1));
+            }
+            return array;
+        }
+
     }
 
-    public int cyfralosowa() {
-        return new Random().nextInt(10);
-    }
-
-    public int rekurencja(int input){
-       int losuj = cyfralosowa();
-
-        if (losuj==input){rekurencja(input);}
-
-
-            return losuj;
-    }
-
-    }
 
 
 
-}
 
 class Jumanji {
     public void puszczamyGre() {
