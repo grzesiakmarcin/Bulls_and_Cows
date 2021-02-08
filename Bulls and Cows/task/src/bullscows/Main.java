@@ -91,8 +91,7 @@ class Game {
 
     public int[] case5(){
         int[] haslo = {0,0,0,0,0};
-        haslo[0]=new ArrayMaker().cyfraRoznaOdZera();
-
+        haslo[0]=new ArrayMaker().cyfraRoznaOdZera
 
         for (int i=1; i<5;i++){
 
