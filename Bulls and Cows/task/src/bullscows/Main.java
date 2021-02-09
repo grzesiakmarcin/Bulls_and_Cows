@@ -1,6 +1,6 @@
 package bullscows;
 
-import java.awt.image.AreaAveragingScaleFilter;
+import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,30 +10,84 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Podaj długość hasła");
         int passLength = sc.nextInt();
-        if (passLength > 10) {
-            System.out.println("Error: can't generate a secret number with a length of 11 because" +
-                    " there aren't enough unique digits.");
-            System.exit(1);
-        } else
-            System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
+        String pass = new Bebechy().generatePasswordWithProvidedLength(passLength);
+        System.out.println(pass);
+        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
+
+        Jumanji playMe = new Jumanji();
+        playMe.puszczamyGre();
 
 
     }
 }
 
-class Game {
+class Bebechy {
 
-    public int generuj (boolean[] tablica,int pozycja){
-        int x = cyfraRoznaOdZera();
 
-        if (tablica[x]= true){
-            generuj(tablica, pozycja);
+    public String generatePasswordWithProvidedLength(int length) {
+        String answer = "";
+        switch (length) {
+            case 1:
+                answer = String.valueOf(charCyfraRoznaOdZera());
+                break;
+            case 2:
+                answer = generujPass(2);
+                break;
+            case 3:
+                answer = generujPass(3);
+                break;
+            case 4:
+                answer = generujPass(4);
+                break;
+            case 5:
+                answer = generujPass(5);
+                break;
+            case 6:
+                answer = generujPass(6);
+                break;
+            case 7:
+                answer = generujPass(7);
+                break;
+            case 8:
+                answer = generujPass(8);
+                break;
+            case 9:
+                answer = generujPass(9);
+                break;
+            case 10:
+                answer = generujPass(10);
+                break;
+            default:
+                answer = "Error: can't generate a secret number with a length of "+String.valueOf(length)+" because there aren't enough unique digits.";
+                break;
+
+        }
+        return answer;
+
+    }
+
+
+    public String generujPass(int howManyDigits) {
+        StringBuilder sb = new StringBuilder();
+        LinkedHashSet<Character> thisSet = new LinkedHashSet<Character>();
+
+
+        if (thisSet.isEmpty()) {
+            thisSet.add(charCyfraRoznaOdZera());
         }
 
+        while (howManyDigits > thisSet.size()) {
+            thisSet.add(charCyfralosowa());
+        }
 
-        return x;
+        for (Character element : thisSet) {
+            sb.append(element);
 
+        }
+
+        return sb.toString();
     }
 
 
@@ -47,6 +101,13 @@ class Game {
 
         return randomDigit;
     }
+
+
+    public int cyfralosowa() {
+        return new Random().nextInt(10);
+    }
+
+
     public char charCyfraRoznaOdZera() {
         Random cyfra = new Random();
         int randomDigit = 0;
@@ -60,20 +121,26 @@ class Game {
         return tablica[0];
     }
 
-    public int cyfralosowa() {
-        return new Random().nextInt(10);
+
+    public char charCyfralosowa() {
+        int digit = new Random().nextInt(10);
+
+        char[] tab = String.valueOf(digit).toCharArray();
+
+        return tab[0];
+
     }
 
 
-    public int rekurencja(int input) {
-        int losuj = cyfralosowa();
-
-        if (losuj == input) {
-            rekurencja(input);
-        }
-
-        return losuj;
-    }
+//    public int rekurencja(int input) {
+//        int losuj = cyfralosowa();
+//
+//        if (losuj == input) {
+//            rekurencja(input);
+//        }
+//
+//        return losuj;
+//    }
 
     public int checkForBulls(int[] password, int[] guess) {
         int bulls = 0;
@@ -104,46 +171,46 @@ class Game {
 
         return cows;
     }
+
+
 }
 
-    class ArrayMaker {
+class ArrayMaker {
 
-        public int[] makeArrayFromInt(int[] array, int sas) {
+    public int[] makeArrayFromInt(int[] array, int sas) {
 
-            String robimyStirnga = String.valueOf(sas);
+        String robimyStirnga = String.valueOf(sas);
 
-            for (int i = 0; i < array.length; i++) {
-                array[i] = robimyStirnga.charAt(i);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = robimyStirnga.charAt(i);
 
-            }
-            return array;
         }
-
-
-        public int[] makeArrayFromString(String string, int[] array) {
-
-            for (int i = 0; i < array.length; i++) {
-                array[i] = Integer.parseInt(string.substring(i, i + 1));
-            }
-            return array;
-        }
-
-        public int[] makeArrayFromString(StringBuilder string, int[] array) {
-
-            for (int i = 0; i < array.length; i++) {
-                array[i] = Integer.parseInt(string.substring(i, i + 1));
-            }
-            return array;
-        }
-
+        return array;
     }
 
 
+    public int[] makeArrayFromString(String string, int[] array) {
 
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Integer.parseInt(string.substring(i, i + 1));
+        }
+        return array;
+    }
+
+    public int[] makeArrayFromString(StringBuilder string, int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Integer.parseInt(string.substring(i, i + 1));
+        }
+        return array;
+    }
+
+}
 
 
 class Jumanji {
     public void puszczamyGre() {
+        Scanner sc = new Scanner(System.in);
         int guessPass = sc.nextInt();
         int[] secretNumberArray = new int[passLength];
         int[] guessSecretArray = new int[passLength];
@@ -154,8 +221,8 @@ class Jumanji {
         int bulls = 0;
         int cows = 0;
 
-        bulls = new Game().checkForBulls(secretNumberArray, guessSecretArray);
-        cows = new Game().checkForCows(secretNumberArray, guessSecretArray);
+        bulls = new Bebechy().checkForBulls(secretNumberArray, guessSecretArray);
+        cows = new Bebechy().checkForCows(secretNumberArray, guessSecretArray);
 
 
         if (cows > 0 && bulls == 0) {
@@ -167,7 +234,7 @@ class Jumanji {
         } else if (cows == 0 && bulls == 0) {
             System.out.println("Grade: None. The secret code is " + pass + ".");
         }
-    }
+  }
 }
 
 
