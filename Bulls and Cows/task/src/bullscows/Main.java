@@ -14,10 +14,12 @@ public class Main {
         int passLength = sc.nextInt();
         String pass = new Bebechy().generatePasswordWithProvidedLength(passLength);
         System.out.println(pass);
-        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
 
-        Jumanji playMe = new Jumanji();
-        playMe.puszczamyGre();
+//        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
+//        String guessPass = sc.next();
+//
+//        Jumanji playMe = new Jumanji();
+//        playMe.puszczamyGre(pass, guessPass);
 
 
     }
@@ -209,14 +211,13 @@ class ArrayMaker {
 
 
 class Jumanji {
-    public void puszczamyGre() {
-        Scanner sc = new Scanner(System.in);
-        int guessPass = sc.nextInt();
-        int[] secretNumberArray = new int[passLength];
-        int[] guessSecretArray = new int[passLength];
+    public void puszczamyGre(String pass, String guessPass) {
 
-        secretNumberArray = new ArrayMaker().makeArrayFromInt(secretNumberArray, pass);
-        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, guessPass);
+        int[] secretNumberArray = new int[pass.length()];
+        int[] guessSecretArray = new int[guessPass.length()];
+
+        secretNumberArray = new ArrayMaker().makeArrayFromInt(secretNumberArray, Integer.parseInt(pass));
+        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, Integer.parseInt(guessPass));
 
         int bulls = 0;
         int cows = 0;
