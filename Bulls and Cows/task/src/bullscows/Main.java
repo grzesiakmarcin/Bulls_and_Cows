@@ -17,18 +17,19 @@ public class Main {
 
 class Bebechy {
 
-    public void tryToGuessPass (String pass, String guessPass){
+    public void tryToGuessPass(String pass, String guessPass, int passLength) {
+
         System.out.println(pass);
 
         Scanner sc = new Scanner(System.in);
 
-        String anotherGuess="";
+        String anotherGuess = "";
 
         int bulls = 0;
         int cows = 0;
 
-        int[] passNumberArray = new int[pass.length()];
-        int[] guessSecretArray = new int[guessPass.length()];
+        int[] passNumberArray = new int[passLength];
+        int[] guessSecretArray = new int[passLength];
 
         passNumberArray = new ArrayMaker().makeArrayFromInt(passNumberArray, Integer.parseInt(pass));
         guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, Integer.parseInt(guessPass));
@@ -47,9 +48,9 @@ class Bebechy {
             System.out.println("Grade: None. The secret code is " + pass + ".");
         }
 
-        while (bulls!=4){
+        while (bulls != passLength) {
             System.out.println("Spróbuj ponownie zgadnąc hasło:");
-            anotherGuess=sc.next();
+            anotherGuess = sc.next();
 
 
             int[] anotherPassNumberArray = new int[pass.length()];
@@ -62,7 +63,7 @@ class Bebechy {
             cows = new Bebechy().checkForCows(passNumberArray, anotherGuessSecretArray);
 
             if (cows > 0 && bulls == 0) {
-                System.out.println("Grade: " + cows + " cow(s).") ;
+                System.out.println("Grade: " + cows + " cow(s).");
             } else if (cows == 0 && bulls > 0) {
                 System.out.println("Grade: " + bulls + " bull(s).");
             } else if (cows > 0 && bulls > 0) {
@@ -112,7 +113,7 @@ class Bebechy {
                 answer = generujPass(10);
                 break;
             default:
-                answer = "Error: can't generate a secret number with a length of "+String.valueOf(length)+" because there aren't enough unique digits.";
+                answer = "Error: can't generate a secret number with a length of " + String.valueOf(length) + " because there aren't enough unique digits.";
                 break;
 
         }
@@ -142,6 +143,28 @@ class Bebechy {
         return sb.toString();
     }
 
+
+//    public int pass1to10digits(int input) {
+//        Scanner sc = new Scanner(System.in);
+//        int result = input;
+//
+//        if (input > 10) {
+//            System.out.println("Error: can't generate a secret number with a length of " + input + " because there aren't enough unique digits.");
+//            System.out.println("Try again");
+//            int anotherTry = sc.nextInt();
+//            System.out.println("odpalam rekurencje: 3, 2, 1!");
+//            pass1to10digits(anotherTry);
+////        }
+////        else {
+////            result = input;
+////        }
+//
+////        while()
+//
+//
+//        return result;
+//
+//    }
 
     public int cyfraRoznaOdZera() {
         Random cyfra = new Random();
@@ -258,34 +281,34 @@ class ArrayMaker {
     }
 
 
-    }
-
-
+}
 
 
 class Jumanji {
     public void puszczamyGre() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj długość hasła");
-        int passLength=sc.nextInt();
+
+        int passLength;
+
+        do {
+            System.out.println("Error: can't generate a secret number with a length of   because there aren't enough unique digits.");
+           passLength = sc.nextInt();
+        } while (passLength > 10);
+
+
+        System.out.println("Hej jestesmy w tym miejscu " + passLength);
+
+
         String pass = new Bebechy().generujPass(passLength);
 
         System.out.println("Zgaduj hasło:");
         String guessPass = sc.next();
 
-        new Bebechy().tryToGuessPass(pass, guessPass);
+        new Bebechy().tryToGuessPass(pass, guessPass, passLength);
 
 
-
-
-
-
-
-
-
-
-
-  }
+    }
 }
 
 

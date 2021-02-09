@@ -247,6 +247,12 @@ files:
 feedback_link: https://hyperskill.org/projects/53/stages/290/implement#comment
 status: Failed
 feedback:
-  message: Failed to launch checking
-  time: Tue, 09 Feb 2021 15:06:33 UTC
+  message: "Exception in test #1\n\njava.lang.ArrayIndexOutOfBoundsException: Index\
+    \ 1 out of bounds for length 1\r\n\tat bullscows.Bebechy.checkForCows(Main.java:218)\r\
+    \n\tat bullscows.Bebechy.tryToGuessPass(Main.java:37)\r\n\tat bullscows.Jumanji.puszczamyGre(Main.java:276)\r\
+    \n\tat bullscows.Main.main(Main.java:12)\n\nPlease find below the output of your\
+    \ program during this failed test.\nNote that the &#39;&gt;&#39; character indicates\
+    \ the beginning of the input line.\n\n---\n\nPodaj długość hasła\n&gt; 1\nZgaduj\
+    \ hasło:\n&gt; 0\n2"
+  time: Tue, 09 Feb 2021 15:14:48 UTC
 record: -1
