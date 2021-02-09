@@ -1,18 +1,25 @@
 [1;31m
 Start test 1[0m
-Trwa generowanie hasla
- Podaj swój typ:
-> 3601
-,Grade: 1 bull(s). The secret code is 8771.
+Podaj długość hasła
+> 4
+1740
 [1;31m
 Start test 2[0m
-Trwa generowanie hasla
- Podaj swój typ:
-> 8771
-+Grade: 1 cow(s). The secret code is 4998.
+Podaj długość hasła
+> 1
+5
 [1;31m
 Start test 3[0m
-Trwa generowanie hasla
- Podaj swój typ:
-> 1235
-+Grade: 1 cow(s). The secret code is 4349.
+Podaj długość hasła
+> 11
+fError: can't generate a secret number with a length of 11 because there aren't enough unique digits.
+[1;31m
+Start test 4[0m
+Podaj długość hasła
+> 6
+842907
+[1;31m
+Start test 5[0m
+Podaj długość hasła
+> 3
+953

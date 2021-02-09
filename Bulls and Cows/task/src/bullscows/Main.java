@@ -8,24 +8,74 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Podaj długość hasła");
-        int passLength = sc.nextInt();
-        String pass = new Bebechy().generatePasswordWithProvidedLength(passLength);
-        System.out.println(pass);
-
-//        System.out.println("Trwa generowanie hasla\n Podaj swój typ:");
-//        String guessPass = sc.next();
-//
-//        Jumanji playMe = new Jumanji();
-//        playMe.puszczamyGre(pass, guessPass);
+        Jumanji playMe = new Jumanji();
+        playMe.puszczamyGre();
 
 
     }
 }
 
 class Bebechy {
+
+    public void tryToGuessPass (String pass, String guessPass){
+        System.out.println(pass);
+
+        Scanner sc = new Scanner(System.in);
+
+        String anotherGuess="";
+
+        int bulls = 0;
+        int cows = 0;
+
+        int[] passNumberArray = new int[pass.length()];
+        int[] guessSecretArray = new int[guessPass.length()];
+
+        passNumberArray = new ArrayMaker().makeArrayFromInt(passNumberArray, Integer.parseInt(pass));
+        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, Integer.parseInt(guessPass));
+
+        bulls = new Bebechy().checkForBulls(passNumberArray, guessSecretArray);
+        cows = new Bebechy().checkForCows(passNumberArray, guessSecretArray);
+
+
+        if (cows > 0 && bulls == 0) {
+            System.out.println("Grade: " + cows + " cow(s). The secret code is " + pass + ".");
+        } else if (cows == 0 && bulls > 0) {
+            System.out.println("Grade: " + bulls + " bull(s). The secret code is " + pass + ".");
+        } else if (cows > 0 && bulls > 0) {
+            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s).");
+        } else if (cows == 0 && bulls == 0) {
+            System.out.println("Grade: None. The secret code is " + pass + ".");
+        }
+
+        while (bulls!=4){
+            System.out.println("Spróbuj ponownie zgadnąc hasło:");
+            anotherGuess=sc.next();
+
+
+            int[] anotherPassNumberArray = new int[pass.length()];
+            int[] anotherGuessSecretArray = new int[anotherGuess.length()];
+
+            passNumberArray = new ArrayMaker().makeArrayFromInt(passNumberArray, Integer.parseInt(pass));
+            guessSecretArray = new ArrayMaker().makeArrayFromInt(anotherGuessSecretArray, Integer.parseInt(anotherGuess));
+
+            bulls = new Bebechy().checkForBulls(passNumberArray, anotherGuessSecretArray);
+            cows = new Bebechy().checkForCows(passNumberArray, anotherGuessSecretArray);
+
+            if (cows > 0 && bulls == 0) {
+                System.out.println("Grade: " + cows + " cow(s).") ;
+            } else if (cows == 0 && bulls > 0) {
+                System.out.println("Grade: " + bulls + " bull(s).");
+            } else if (cows > 0 && bulls > 0) {
+                System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s).");
+            } else if (cows == 0 && bulls == 0) {
+                System.out.println("Grade: None.");
+            }
+
+        }
+
+        System.out.println("You win :)");
+
+    }
 
 
     public String generatePasswordWithProvidedLength(int length) {
@@ -207,34 +257,34 @@ class ArrayMaker {
         return array;
     }
 
-}
+
+    }
+
+
 
 
 class Jumanji {
-    public void puszczamyGre(String pass, String guessPass) {
+    public void puszczamyGre() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Podaj długość hasła");
+        int passLength=sc.nextInt();
+        String pass = new Bebechy().generujPass(passLength);
 
-        int[] secretNumberArray = new int[pass.length()];
-        int[] guessSecretArray = new int[guessPass.length()];
+        System.out.println("Zgaduj hasło:");
+        String guessPass = sc.next();
 
-        secretNumberArray = new ArrayMaker().makeArrayFromInt(secretNumberArray, Integer.parseInt(pass));
-        guessSecretArray = new ArrayMaker().makeArrayFromInt(guessSecretArray, Integer.parseInt(guessPass));
-
-        int bulls = 0;
-        int cows = 0;
-
-        bulls = new Bebechy().checkForBulls(secretNumberArray, guessSecretArray);
-        cows = new Bebechy().checkForCows(secretNumberArray, guessSecretArray);
+        new Bebechy().tryToGuessPass(pass, guessPass);
 
 
-        if (cows > 0 && bulls == 0) {
-            System.out.println("Grade: " + cows + " cow(s). The secret code is " + pass + ".");
-        } else if (cows == 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s). The secret code is " + pass + ".");
-        } else if (cows > 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s). The secret code is " + pass + ".");
-        } else if (cows == 0 && bulls == 0) {
-            System.out.println("Grade: None. The secret code is " + pass + ".");
-        }
+
+
+
+
+
+
+
+
+
   }
 }
 

@@ -1,4 +1,5 @@
 bullscows/Main.java
  bullscows.ArrayMaker
- bullscows.Game
+ bullscows.Bebechy
+ bullscows.Jumanji
  bullscows.Main
