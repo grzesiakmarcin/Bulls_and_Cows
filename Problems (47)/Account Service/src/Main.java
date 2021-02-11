@@ -20,44 +20,39 @@ interface AccountService {
 
 class AccountServiceImpl implements AccountService {
 
-    private Account[] account;
+    private Account[] accounts;
 
     public AccountServiceImpl(Account[] account) {
-        this.account = account;
+        this.accounts = account;
     }
 
     @Override
     public Account findAccountByOwnerId(long id) {
-        Account result=null ;
 
-//        for (Account a : account) {
-//            if (a.getOwner().getId() == id) {
-//               result= a;
-//            }
-//        }
 
-        for(Account acouunt : account){
-            if (acouunt.getOwner().getId() == id){
-                result = acouunt;
-
+            for (int i=0;i<accounts.length-1;i++){
+                if(accounts[i].getOwner().getId()==id){
+                    return accounts[i];
+                }
             }
+            return null;
         }
 
-        return result;
 
-    }
+
+
 
     @Override
-    public long countAccountsWithBalanceGreaterThan(long value) {
-        long result = 0;
-        for (Account a : account) {
-            if (value > a.getBalance()) {
-                result++;
-            }
-        }
 
-        return result;
-    }
+        public long countAccountsWithBalanceGreaterThan(long value) {
+            long balance=0;
+            for (int i=0;i<accounts.length;i++){
+                if(accounts[i].getBalance()>value){
+                    balance++;
+                }
+            }
+            return balance;
+        }
 }
 
 class Account {
