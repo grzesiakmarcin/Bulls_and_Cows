@@ -8,31 +8,31 @@ interface Scalable {
     void scale(float factor);
 }
 
-interface MutableShape extends Movable,Scalable{
-    @Override
-    default void move(float dx, float dy){
 
-    }
-
-    @Override
-    default void scale(float factor){
-
-    }
+interface MutableShape extends Movable,Scalable {
 }
 
-final class Circle implements MutableShape{
+final class Circle implements MutableShape {
 
     /**
+     *
+     *      Definiuje poziome położenie środka okręgu
+     *
      * Defines the horizontal position of the center of the circle
      */
     private float centerX;
 
     /**
+     *      Określa pionowe położenie środka okręgu
+     *
      * Defines the vertical position of the center of the circle
      */
     private float centerY;
 
     /**
+     *
+     *      Definiuje promień okręgu
+     *
      * Defines the radius of the circle
      */
     private float radius;
@@ -54,26 +54,47 @@ final class Circle implements MutableShape{
     public float getRadius() {
         return radius;
     }
+
+    @Override
+    public void move(float dx, float dy) {
+        centerX=centerX+dx;
+        centerY=centerY+dy;
+
+    }
+
+    @Override
+    public void scale(float factor) {
+        radius=radius*factor;
+
+    }
 }
 
-final class Rectangle implements MutableShape{
+final class Rectangle implements MutableShape {
 
     /**
+     *   Definiuje współrzędną X lewego górnego rogu prostokąta.
+     *
      * Defines the X coordinate of the upper-left corner of the rectangle.
      */
     private float x;
 
     /**
+     *  Definiuje współrzędną Y lewego górnego rogu prostokąta.
+     *
      * Defines the Y coordinate of the upper-left corner of the rectangle.
      */
     private float y;
 
     /**
+     *  Określa szerokość prostokąta.
+     *
      * Defines the width of the rectangle.
      */
     private float width;
 
     /**
+     *  Określa wysokość prostokąta.
+     *
      * Defines the height of the rectangle.
      */
     private float height;
@@ -83,16 +104,6 @@ final class Rectangle implements MutableShape{
         this.y = y;
         this.width = w;
         this.height = h;
-    }
-
-    @Override
-    public void move(float dx, float dy) {
-        System.out.println(dx+dy);
-    }
-
-    @Override
-    public void scale(float factor) {
-
     }
 
     public float getX() {
@@ -109,5 +120,21 @@ final class Rectangle implements MutableShape{
 
     public float getHeight() {
         return height;
+    }
+
+    @Override
+    public void move(float dx, float dy) {
+        x=x+dx;
+        y=y+dy;
+
+
+
+    }
+
+    @Override
+    public void scale(float factor) {
+        width=width*factor;
+        height=height*factor;
+
     }
 }

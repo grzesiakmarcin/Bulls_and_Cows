@@ -24,8 +24,8 @@ class Addition extends  IntBinaryOperation{
 
     @Override
     public int perform(){
-        int result= firstArg+secondArg;
-        return result;
+
+        return firstArg+secondArg;
     }
 }
 class Multiplication extends IntBinaryOperation {
@@ -38,7 +38,7 @@ class Multiplication extends IntBinaryOperation {
 
     @Override
     public int perform() {
-         int result= firstArg*secondArg;
-        return result;
+
+        return firstArg*secondArg;
     }
 }
