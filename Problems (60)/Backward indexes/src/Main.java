@@ -4,18 +4,18 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static <T> T getElementByIndex(List<T> lst, int index) {
-        int result=0;
+        int result = 0;
 
 
+//
+//           if (index < 0) {
+//
+//              result= lst.size()-Math.abs(index);
+//
+//        } else{result=index;}
+//            return lst.get(result);
 
-           if (index < 0) {
-
-              result= lst.size()-Math.abs(index);
-
-        } else{result=index;}
-            return lst.get(result);
-
-
+        return lst.get(index<0? lst.size()+index:index);
     }
 
     /* Do not change code below */
