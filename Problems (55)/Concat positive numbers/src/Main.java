@@ -6,23 +6,10 @@ import java.util.stream.Collectors;
 class ConcatPositiveNumbersProblem {
 
     public static ArrayList<Integer> concatPositiveNumbers(ArrayList<Integer> l1, ArrayList<Integer> l2) {
-        ArrayList<Integer> l3 = new ArrayList<Integer>();
+        l1.addAll(l2);
+        l1.removeIf(num -> num < 0);
 
-        for (Integer element :l1) {
-            if(element>0){
-                l3.add(element);
-            }
-
-        }
-
-        for (Integer element :l2) {
-            if(element>0){
-                l3.add(element);
-            }
-
-        }
-
-        return l3; // write your code here
+        return l1; // write your code here
     }
 
     /* Do not modify this method */
