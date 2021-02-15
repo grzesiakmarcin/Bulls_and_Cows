@@ -7,9 +7,15 @@ class Main {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
 
-        StringReverser reverser = /* create an instance of an anonymous class here,
-                                     do not forget ; on the end */
+        StringReverser reverser = new StringReverser (){
+            @Override
+            public String reverse(String str){
 
+                StringBuilder sb = new StringBuilder(str);
+                return  String.valueOf(sb.reverse());
+
+            }
+        };
         System.out.println(reverser.reverse(line));
     }
 
