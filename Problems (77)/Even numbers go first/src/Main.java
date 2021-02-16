@@ -12,22 +12,26 @@ class Main {
 
         while (sc.hasNext()) {
             int nextInt = sc.nextInt();
-            if (!myQueue.contains(nextInt)) {
 
-                if (nextInt % 2 == 0) {
-                    myQueue.addFirst(nextInt);
-                } else if (nextInt % 2 != 0) {
-                    myQueue.offerLast(nextInt);
-                }
+            if (nextInt % 2 == 0) {
+                myQueue.addFirst(nextInt);
+            } else if (nextInt % 2 != 0) {
+                myQueue.offerLast(nextInt);
             }
 
+        }
+
+
+//        for (int i = 0; i < size; i++) {
+//            System.out.println(myQueue.poll());
+//        }
+
+        for ( int i :myQueue
+             ) {
+            System.out.println(i);
 
         }
-        //System.out.println(myQueue);
 
-        for (int i=0;i<size;i++){
-            System.out.println(myQueue.poll());
-        }
 
     }
 }
