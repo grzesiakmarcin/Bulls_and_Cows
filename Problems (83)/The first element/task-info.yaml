@@ -1,0 +1,23 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // do not remove imports
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    import java.util.function.Function;
+
+    class ArrayUtils {
+        // define getFirst method here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11022#comment
+status: Failed
+feedback:
+  message: "Failed test #4 of 5. Runtime error\n\nError:\nException in thread \"main\"\
+    \ java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0\n\
+    \tat ArrayUtils.getFirst(Main.java:13)\n\tat Main.main(Main.java:35)\n"
+  time: Tue, 16 Feb 2021 16:17:42 UTC
+record: -1
