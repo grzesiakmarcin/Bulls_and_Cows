@@ -7,7 +7,7 @@ public class Main {
         map.put("Omega", 24);
         map.put("Alpha",  1);
 
-        for(var  element : map.entrySet()){
+        for(var element : map.entrySet()){
             System.out.println(element.getKey()+"="+element.getValue());
         }
 
