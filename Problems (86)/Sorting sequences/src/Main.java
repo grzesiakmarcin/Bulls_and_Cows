@@ -6,6 +6,7 @@ public class Main {
     public static void sortInDescendingOrder(List<Integer> sequence) {
 
         Collections.sort(sequence, Collections.reverseOrder());
+
     }
 
     /* Do not change code below */
