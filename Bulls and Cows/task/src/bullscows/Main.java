@@ -79,48 +79,7 @@ class Bebechy {
 
     }
 
-//
-//    public String generatePasswordWithProvidedLength(int length) {
-//        String answer = "";
-//        switch (length) {
-//            case 1:
-//                answer = String.valueOf(charCyfraRoznaOdZera());
-//                break;
-//            case 2:
-//                answer = generujPass(2);
-//                break;
-//            case 3:
-//                answer = generujPass(3);
-//                break;
-//            case 4:
-//                answer = generujPass(4);
-//                break;
-//            case 5:
-//                answer = generujPass(5);
-//                break;
-//            case 6:
-//                answer = generujPass(6);
-//                break;
-//            case 7:
-//                answer = generujPass(7);
-//                break;
-//            case 8:
-//                answer = generujPass(8);
-//                break;
-//            case 9:
-//                answer = generujPass(9);
-//                break;
-//            case 10:
-//                answer = generujPass(10);
-//                break;
-//            default:
-//                answer = "Error: can't generate a secret number with a length of " + String.valueOf(length) + " because there aren't enough unique digits.";
-//                break;
-//
-//        }
-//        return answer;
-//
-//    }
+
 
 
     public String generujPass(int howManyDigits) {
@@ -144,44 +103,23 @@ class Bebechy {
         return sb.toString();
     }
 
-
-//    public int pass1to10digits(int input) {
-//        Scanner sc = new Scanner(System.in);
-//        int result = input;
-//
-//        if (input > 10) {
-//            System.out.println("Error: can't generate a secret number with a length of " + input + " because there aren't enough unique digits.");
-//            System.out.println("Try again");
-//            int anotherTry = sc.nextInt();
-//            System.out.println("odpalam rekurencje: 3, 2, 1!");
-//            pass1to10digits(anotherTry);
-////        }
-////        else {
-////            result = input;
-////        }
-//
-////        while()
 //
 //
-//        return result;
+//    public int cyfraRoznaOdZera() {
+//        Random cyfra = new Random();
+//        int randomDigit = 0;
 //
+//        while (randomDigit == 0) {
+//            randomDigit = cyfra.nextInt(10);
+//        }
+//
+//        return randomDigit;
 //    }
-
-    public int cyfraRoznaOdZera() {
-        Random cyfra = new Random();
-        int randomDigit = 0;
-
-        while (randomDigit == 0) {
-            randomDigit = cyfra.nextInt(10);
-        }
-
-        return randomDigit;
-    }
-
-
-    public int cyfralosowa() {
-        return new Random().nextInt(10);
-    }
+//
+//
+//    public int cyfralosowa() {
+//        return new Random().nextInt(10);
+//    }
 
 
     public char charCyfraRoznaOdZera() {
@@ -208,15 +146,6 @@ class Bebechy {
     }
 
 
-//    public int rekurencja(int input) {
-//        int losuj = cyfralosowa();
-//
-//        if (losuj == input) {
-//            rekurencja(input);
-//        }
-//
-//        return losuj;
-//    }
 
     public int checkForBulls(int[] password, int[] guess) {
         int bulls = 0;
@@ -272,15 +201,6 @@ class ArrayMaker {
         }
         return array;
     }
-
-    public int[] makeArrayFromString(StringBuilder string, int[] array) {
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] = Integer.parseInt(string.substring(i, i + 1));
-        }
-        return array;
-    }
-
 
 }
 

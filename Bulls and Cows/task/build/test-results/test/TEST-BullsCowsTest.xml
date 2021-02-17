@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-17T12:25:23" hostname="DESKTOP-4RRBCPT" time="0.313">
+<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-17T14:42:33" hostname="DESKTOP-4RRBCPT" time="0.396">
   <properties/>
-  <testcase name="start" classname="BullsCowsTest" time="0.313">
-    <failure message="java.lang.AssertionError: Wrong answer in test #3&#10;&#10;Output should contain 6 bulls summarized as every option was tried. Found: 5&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Podaj długość hasła&#10;&gt; 6&#10;Zgaduj hasło:&#10;&gt; 000000&#10;Grade: None. The secret code is 780169.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 111111&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 222222&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 333333&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 444444&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 555555&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 666666&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 777777&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 888888&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 999999&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #3
+  <testcase name="start" classname="BullsCowsTest" time="0.396">
+    <failure message="java.lang.AssertionError: Wrong answer in test #3&#10;&#10;Output should contain 6 bulls summarized as every option was tried. Found: 5&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Podaj długość hasła&#10;&gt; 6&#10;Zgaduj hasło:&#10;&gt; 000000&#10;Grade: None. The secret code is 415039.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 111111&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 222222&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 333333&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 444444&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 555555&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 666666&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 777777&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 888888&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 999999&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #3
 
 Output should contain 6 bulls summarized as every option was tried. Found: 5
 
@@ -15,7 +15,7 @@ Podaj długość hasła
 &gt; 6
 Zgaduj hasło:
 &gt; 000000
-Grade: None. The secret code is 780169.
+Grade: None. The secret code is 415039.
 Spróbuj ponownie zgadnąc hasło:
 &gt; 111111
 Grade: 1 bull(s) and 5 cow(s).
@@ -24,22 +24,22 @@ Spróbuj ponownie zgadnąc hasło:
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 &gt; 333333
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 &gt; 444444
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 &gt; 555555
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 &gt; 666666
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 &gt; 777777
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 &gt; 888888
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 &gt; 999999
 Grade: 1 bull(s) and 5 cow(s).
@@ -101,7 +101,7 @@ Podaj długość hasła
 > 1
 Zgaduj hasło:
 > 0
-Grade: None. The secret code is 8.
+Grade: None. The secret code is 7.
 Spróbuj ponownie zgadnąc hasło:
 > 1
 Grade: None.
@@ -122,9 +122,6 @@ Spróbuj ponownie zgadnąc hasło:
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 7
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 8
 Grade: 1 bull(s).
 You win :)
 ?[1;31m
@@ -133,22 +130,22 @@ Podaj długość hasła
 > 4
 Zgaduj hasło:
 > 0000
-Grade: None. The secret code is 4869.
+Grade: None. The secret code is 5682.
 Spróbuj ponownie zgadnąc hasło:
 > 1111
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 2222
-Grade: None.
+Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 3333
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 4444
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 5555
-Grade: None.
+Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 6666
 Grade: 1 bull(s) and 3 cow(s).
@@ -159,19 +156,76 @@ Spróbuj ponownie zgadnąc hasło:
 > 8888
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 9999
+> 2568
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 5268
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 4689
-Grade: 2 bull(s) and 2 cow(s).
+> 6258
+Grade: 4 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 6489
+> 2658
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 8469
+> 5628
 Grade: 2 bull(s) and 2 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 4869
+> 6528
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8526
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 5826
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 2856
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8256
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 5286
+Grade: 2 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 2586
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 2685
+Grade: 2 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 6285
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8265
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 2865
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 6825
+Grade: 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8625
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8652
+Grade: 2 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 6852
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 5862
+Grade: 2 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 8562
+Grade: 1 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 6582
+Grade: 2 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 5682
 Grade: 4 bull(s).
 You win :)
 ?[1;31m
@@ -180,7 +234,7 @@ Podaj długość hasła
 > 6
 Zgaduj hasło:
 > 000000
-Grade: None. The secret code is 780169.
+Grade: None. The secret code is 415039.
 Spróbuj ponownie zgadnąc hasło:
 > 111111
 Grade: 1 bull(s) and 5 cow(s).
@@ -189,22 +243,22 @@ Spróbuj ponownie zgadnąc hasło:
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 333333
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 444444
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 555555
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 666666
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 777777
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 888888
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 999999
 Grade: 1 bull(s) and 5 cow(s).
