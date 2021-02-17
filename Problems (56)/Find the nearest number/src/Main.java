@@ -22,26 +22,26 @@ public class Main {
 
     }
 
-    public void wypiszCyferki(int hated, List<Integer> lista){
-
-
-        if(lista.contains(hated)) System.out.println(hated);
-
-        else {
-
-
-
-        }
-
-    }
-
-
-    public void wypiszCyfreRoznaO1 (int hated ,List<Integer>lista){
-
-        for (Integer element:lista){
-            if
-        }
-    }
-
+//    public void wypiszCyferki(int hated, List<Integer> lista){
+//
+//
+//        if(lista.contains(hated)) System.out.println(hated);
+//
+//        else {
+//
+//
+//
+//        }
+//
+//    }
+//
+//
+//    public void wypiszCyfreRoznaO1 (int hated ,List<Integer>lista){
+//
+//        for (Integer element:lista){
+//            if
+//        }
+//    }
+//
 
 }
