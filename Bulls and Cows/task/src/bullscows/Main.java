@@ -121,6 +121,9 @@ class Bebechy {
 //        return new Random().nextInt(10);
 //    }
 
+    public char superMetoda(){
+        return String.valueOf(Math.random()).charAt(4);
+    }
 
     public char charCyfraRoznaOdZera() {
         Random cyfra = new Random();
@@ -133,6 +136,13 @@ class Bebechy {
         char[] tablica = String.valueOf(randomDigit).toCharArray();
 
         return tablica[0];
+
+//       char result ='0';
+//
+//       while(result=='0'){
+//           result=superMetoda();
+//       }
+//       return result;
     }
 
 

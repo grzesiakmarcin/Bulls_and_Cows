@@ -10,6 +10,8 @@ class Main {
         String[] sec = sc.nextLine().split(" ");
 
 
+
+
         for (int i = 0; i < first.length; i++) {
             lista1.add(Integer.parseInt(first[i]));
         }

@@ -1,127 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-02-17T14:42:33" hostname="DESKTOP-4RRBCPT" time="0.396">
+<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-19T15:58:33" hostname="DESKTOP-4RRBCPT" time="0.769">
   <properties/>
-  <testcase name="start" classname="BullsCowsTest" time="0.396">
-    <failure message="java.lang.AssertionError: Wrong answer in test #3&#10;&#10;Output should contain 6 bulls summarized as every option was tried. Found: 5&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Podaj długość hasła&#10;&gt; 6&#10;Zgaduj hasło:&#10;&gt; 000000&#10;Grade: None. The secret code is 415039.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 111111&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 222222&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 333333&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 444444&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 555555&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 666666&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 777777&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 888888&#10;Grade: None.&#10;Spróbuj ponownie zgadnąc hasło:&#10;&gt; 999999&#10;Grade: 1 bull(s) and 5 cow(s).&#10;Spróbuj ponownie zgadnąc hasło:" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #3
-
-Output should contain 6 bulls summarized as every option was tried. Found: 5
-
-Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
-
----
-
-Podaj długość hasła
-&gt; 6
-Zgaduj hasło:
-&gt; 000000
-Grade: None. The secret code is 415039.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 111111
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 222222
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 333333
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 444444
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 555555
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 666666
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 777777
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 888888
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 999999
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:131)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
+  <testcase name="start" classname="BullsCowsTest" time="0.769"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Podaj długość hasła
 > 1
 Zgaduj hasło:
 > 0
-Grade: None. The secret code is 7.
+Grade: None. The secret code is 2.
 Spróbuj ponownie zgadnąc hasło:
 > 1
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 2
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 3
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 4
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 5
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 6
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-> 7
 Grade: 1 bull(s).
 You win :)
 ?[1;31m
@@ -130,102 +22,63 @@ Podaj długość hasła
 > 4
 Zgaduj hasło:
 > 0000
-Grade: None. The secret code is 5682.
+Grade: None. The secret code is 9123.
 Spróbuj ponownie zgadnąc hasło:
 > 1111
-Grade: None.
+Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 2222
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 3333
-Grade: None.
+Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 4444
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 5555
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 6666
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 7777
 Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 8888
+Grade: None.
+Spróbuj ponownie zgadnąc hasło:
+> 9999
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 2568
+> 1239
 Grade: 4 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 5268
+> 2139
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 6258
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 2658
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 5628
+> 3129
 Grade: 2 bull(s) and 2 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 6528
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 8526
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 5826
+> 1329
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 2856
+> 2319
 Grade: 4 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 8256
+> 3219
 Grade: 4 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 5286
+> 9213
 Grade: 2 bull(s) and 2 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 2586
+> 2913
 Grade: 1 bull(s) and 3 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 2685
+> 1923
 Grade: 2 bull(s) and 2 cow(s).
 Spróbuj ponownie zgadnąc hasło:
-> 6285
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 8265
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 2865
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 6825
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 8625
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 8652
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 6852
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 5862
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 8562
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 6582
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-> 5682
+> 9123
 Grade: 4 bull(s).
 You win :)
 ?[1;31m
@@ -234,28 +87,28 @@ Podaj długość hasła
 > 6
 Zgaduj hasło:
 > 000000
-Grade: None. The secret code is 415039.
+Grade: None. The secret code is 726149.
 Spróbuj ponownie zgadnąc hasło:
 > 111111
 Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 222222
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 333333
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 444444
 Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 555555
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None.
 Spróbuj ponownie zgadnąc hasło:
 > 666666
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 777777
-Grade: None.
+Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
 > 888888
 Grade: None.
@@ -263,6 +116,186 @@ Spróbuj ponownie zgadnąc hasło:
 > 999999
 Grade: 1 bull(s) and 5 cow(s).
 Spróbuj ponownie zgadnąc hasło:
+> 124679
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 214679
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 412679
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 142679
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 241679
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 421679
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 621479
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 261479
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 162479
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 612479
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 216479
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 126479
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 146279
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 416279
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 614279
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 164279
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 461279
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 641279
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 642179
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 462179
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 264179
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 624179
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 426179
+Grade: 4 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 246179
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 746129
+Grade: 4 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 476129
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 674129
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 764129
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 467129
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 647129
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 147629
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 417629
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 714629
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 174629
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 471629
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 741629
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 761429
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 671429
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 176429
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 716429
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 617429
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 167429
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 164729
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 614729
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 416729
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 146729
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 641729
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 461729
+Grade: 1 bull(s) and 5 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 261749
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 621749
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 126749
+Grade: 4 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 216749
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 612749
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 162749
+Grade: 2 bull(s) and 4 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 762149
+Grade: 4 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 672149
+Grade: 3 bull(s) and 3 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 276149
+Grade: 4 bull(s) and 2 cow(s).
+Spróbuj ponownie zgadnąc hasło:
+> 726149
+Grade: 6 bull(s).
+You win :)
+?[1;31m
+Start test 4?[0m
+Podaj długość hasła
+> 11
+Error: can't generate a secret number with a length of 11 because there aren't enough unique digits. 
+Try again
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

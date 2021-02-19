@@ -24,20 +24,5 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/2354#comment
-status: Failed
-feedback:
-  message: |
-    Failed test #1 of 6. Wrong answer
-
-    This is a sample test from the problem statement!
-
-    Test input:
-    10 13 22 14
-
-    Correct output:
-    22 14 13 10
-
-    Your code output:
-    14 22 13 10
-  time: Sat, 13 Feb 2021 19:55:32 UTC
+status: Solved
 record: -1

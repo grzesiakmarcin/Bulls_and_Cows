@@ -242,50 +242,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/projects/53/stages/291/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #3
-
-    Output should contain 6 bulls summarized as every option was tried. Found: 5
-
-    Please find below the output of your program during this failed test.
-    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
-
-    ---
-
-    Podaj długość hasła
-    &gt; 6
-    Zgaduj hasło:
-    &gt; 000000
-    Grade: None. The secret code is 415039.
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 111111
-    Grade: 1 bull(s) and 5 cow(s).
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 222222
-    Grade: None.
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 333333
-    Grade: 1 bull(s) and 5 cow(s).
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 444444
-    Grade: 1 bull(s) and 5 cow(s).
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 555555
-    Grade: 1 bull(s) and 5 cow(s).
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 666666
-    Grade: None.
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 777777
-    Grade: None.
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 888888
-    Grade: None.
-    Spróbuj ponownie zgadnąc hasło:
-    &gt; 999999
-    Grade: 1 bull(s) and 5 cow(s).
-    Spróbuj ponownie zgadnąc hasło:
-  time: Wed, 17 Feb 2021 14:42:34 UTC
+  message: Congratulations!
+  time: Fri, 19 Feb 2021 15:58:34 UTC
 record: -1

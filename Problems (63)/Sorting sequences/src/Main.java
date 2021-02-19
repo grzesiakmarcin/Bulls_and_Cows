@@ -4,9 +4,8 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void sortInDescendingOrder(List<Integer> sequence) {
-        Collections.reverseOrder();
 
-        // write your code here
+        Collections.sort(sequence, Collections.reverseOrder());
     }
 
     /* Do not change code below */
