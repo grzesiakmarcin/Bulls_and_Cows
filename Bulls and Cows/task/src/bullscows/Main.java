@@ -115,14 +115,14 @@ class Bebechy {
 
     public String generujPassAllCharacters(int howManyDigits, int howManySymbols) {
         StringBuilder sb = new StringBuilder();
-        List<Character> thisList = new LinkedList<>();
+        LinkedHashSet<Character> thisSet = new LinkedHashSet<>();
 
 
-        while (howManyDigits > thisList.size()) {
-            thisList.add(generateLatinLettersAndDigitPass(howManySymbols));
+        while (howManyDigits > thisSet.size()) {
+            thisSet.add(generateLatinLettersAndDigitPass(howManySymbols));
         }
 
-        for (Character element : thisList) {
+        for (Character element : thisSet) {
             sb.append(element);
 
         }

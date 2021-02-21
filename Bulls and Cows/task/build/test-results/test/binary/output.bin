@@ -7,7 +7,31 @@
 "The secret is prepared: * (0-9).
  Now try to guess the password:
 > 0
-)Grade: 1 bull(s). The secret code is 0.
+$Grade: None. The secret code is 8.
+ Now try to guess the password:
+> 1
+Grade: None.
+ Now try to guess the password:
+> 2
+Grade: None.
+ Now try to guess the password:
+> 3
+Grade: None.
+ Now try to guess the password:
+> 4
+Grade: None.
+ Now try to guess the password:
+> 5
+Grade: None.
+ Now try to guess the password:
+> 6
+Grade: None.
+ Now try to guess the password:
+> 7
+Grade: None.
+ Now try to guess the password:
+> 8
+Grade: 1 bull(s).
 You win :)
 [1;31m
 Start test 2[0m
@@ -18,13 +42,851 @@
 %The secret is prepared: **** (0-9).
  Now try to guess the password:
 > 0000
-$Grade: 1 bull(s) and 3 cow(s).7705
+'Grade: None. The secret code is 4793.
  Now try to guess the password:
 > 1111
 Grade: None.
  Now try to guess the password:
 > 2222
 Grade: None.
+ Now try to guess the password:
+> 3333
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 4444
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 5555
+Grade: None.
+ Now try to guess the password:
+> 6666
+Grade: None.
+ Now try to guess the password:
+> 7777
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 8888
+Grade: None.
+ Now try to guess the password:
+> 9999
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 3479
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 4379
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 7349
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 3749
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 4739
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 7439
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 9437
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 4937
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 3947
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 9347
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 4397
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 3497
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 3794
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 7394
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 9374
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 3974
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 7934
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 9734
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 9743
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 7943
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 4973
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 9473
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 7493
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> 4793
+Grade: 4 bull(s).
+You win :)
+[1;31m
+Start test 3[0m
+&Input the length of the secret code:
+> 6
+3Input the number of possible symbols in the code:
+> 10
+'The secret is prepared: ****** (0-9).
+ Now try to guess the password:
+	> 000000
+&Grade: 1 bull(s) and 5 cow(s).365098
+ Now try to guess the password:
+	> 111111
+Grade: None.
+ Now try to guess the password:
+	> 222222
+Grade: None.
+ Now try to guess the password:
+	> 333333
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 444444
+Grade: None.
+ Now try to guess the password:
+	> 555555
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 666666
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 777777
+Grade: None.
+ Now try to guess the password:
+	> 888888
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 999999
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 035689
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 305689
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 503689
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 053689
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 350689
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 530689
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 630589
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 360589
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 063589
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 603589
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 306589
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 036589
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 056389
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 506389
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 605389
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 065389
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 560389
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 650389
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 653089
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 563089
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 365089
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 635089
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 536089
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 356089
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 856039
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 586039
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 685039
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 865039
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 568039
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 658039
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 058639
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 508639
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 805639
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 085639
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 580639
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 850639
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 860539
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 680539
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 086539
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 806539
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 608539
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 068539
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 065839
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 605839
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 506839
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 056839
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 650839
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 560839
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 360859
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 630859
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 036859
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 306859
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 603859
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 063859
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 863059
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 683059
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 386059
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 836059
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 638059
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 368059
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 308659
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 038659
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 830659
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 380659
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 083659
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 803659
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 806359
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 086359
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 680359
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 860359
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 068359
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 608359
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 508369
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 058369
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 850369
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 580369
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 085369
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 805369
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 305869
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 035869
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 530869
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 350869
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 053869
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 503869
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 583069
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 853069
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 358069
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 538069
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 835069
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 385069
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 380569
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 830569
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 038569
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 308569
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 803569
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 083569
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 683509
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 863509
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 368509
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 638509
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 836509
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 386509
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 586309
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 856309
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 658309
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 568309
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 865309
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 685309
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 635809
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 365809
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 563809
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 653809
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 356809
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 536809
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 538609
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 358609
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 853609
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 583609
+Grade: 6 cow(s).
+ Now try to guess the password:
+	> 385609
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 835609
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 935608
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 395608
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 593608
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 953608
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 359608
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 539608
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 639508
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 369508
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 963508
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 693508
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 396508
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 936508
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 956308
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 596308
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 695308
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 965308
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 569308
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 659308
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 653908
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 563908
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 365908
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 635908
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 536908
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 356908
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 056938
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 506938
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 605938
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 065938
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 560938
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 650938
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 950638
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 590638
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 095638
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 905638
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 509638
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 059638
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 069538
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 609538
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 906538
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 096538
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 690538
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 960538
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 965038
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 695038
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 596038
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 956038
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 659038
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 569038
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 369058
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 639058
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 936058
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 396058
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 693058
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 963058
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 063958
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 603958
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 306958
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 036958
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 630958
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 360958
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 390658
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 930658
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 039658
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 309658
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 903658
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 093658
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 096358
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 906358
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 609358
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 069358
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 960358
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 690358
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 590368
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 950368
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 059368
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 509368
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 905368
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 095368
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 395068
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 935068
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 539068
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 359068
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 953068
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 593068
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 503968
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 053968
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 350968
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 530968
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 035968
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 305968
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 309568
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 039568
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 930568
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 390568
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 093568
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 903568
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 603598
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 063598
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 360598
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 630598
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 036598
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 306598
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 506398
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 056398
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 650398
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 560398
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 065398
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 605398
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 635098
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 365098
+Grade: 6 bull(s).
+You win :)
+[1;31m
+Start test 4[0m
+&Input the length of the secret code:
+> 4
+3Input the number of possible symbols in the code:
+> 16
+)The secret is prepared: **** (0-9,a-f).
+ Now try to guess the password:
+> 0000
+'Grade: None. The secret code is f527.
+ Now try to guess the password:
+> 1111
+Grade: None.
+ Now try to guess the password:
+> 2222
+ Grade: 1 bull(s) and 3 cow(s).
  Now try to guess the password:
 > 3333
 Grade: None.
@@ -39,5 +901,508 @@
 Grade: None.
  Now try to guess the password:
 > 7777
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 8888
+Grade: None.
+ Now try to guess the password:
+> 9999
+Grade: None.
+ Now try to guess the password:
+> aaaa
+Grade: None.
+ Now try to guess the password:
+> bbbb
+Grade: None.
+ Now try to guess the password:
+> cccc
+Grade: None.
+ Now try to guess the password:
+> dddd
+Grade: None.
+ Now try to guess the password:
+> eeee
+Grade: None.
+ Now try to guess the password:
+> ffff
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 257f
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 527f
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 725f
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 275f
+Grade: 4 cow(s).
+ Now try to guess the password:
+> 572f
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
+> 752f
+ Grade: 2 bull(s) and 2 cow(s).
+ Now try to guess the password:
+> f527
+Grade: 4 bull(s).
+You win :)
+[1;31m
+Start test 5[0m
+&Input the length of the secret code:
+> 6
+3Input the number of possible symbols in the code:
+> 36
++The secret is prepared: ****** (0-9,a-z).
+ Now try to guess the password:
+	> 000000
+)Grade: None. The secret code is acvs7x.
+ Now try to guess the password:
+	> 111111
+Grade: None.
+ Now try to guess the password:
+	> 222222
+Grade: None.
+ Now try to guess the password:
+	> 333333
+Grade: None.
+ Now try to guess the password:
+	> 444444
+Grade: None.
+ Now try to guess the password:
+	> 555555
+Grade: None.
+ Now try to guess the password:
+	> 666666
+Grade: None.
+ Now try to guess the password:
+	> 777777
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 888888
+Grade: None.
+ Now try to guess the password:
+	> 999999
+Grade: None.
+ Now try to guess the password:
+	> aaaaaa
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> bbbbbb
+Grade: None.
+ Now try to guess the password:
+	> cccccc
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> dddddd
+Grade: None.
+ Now try to guess the password:
+	> eeeeee
+Grade: None.
+ Now try to guess the password:
+	> ffffff
+Grade: None.
+ Now try to guess the password:
+	> gggggg
+Grade: None.
+ Now try to guess the password:
+	> hhhhhh
+Grade: None.
+ Now try to guess the password:
+	> iiiiii
+Grade: None.
+ Now try to guess the password:
+	> jjjjjj
+Grade: None.
+ Now try to guess the password:
+	> kkkkkk
+Grade: None.
+ Now try to guess the password:
+	> llllll
+Grade: None.
+ Now try to guess the password:
+	> mmmmmm
+Grade: None.
+ Now try to guess the password:
+	> nnnnnn
+Grade: None.
+ Now try to guess the password:
+	> oooooo
+Grade: None.
+ Now try to guess the password:
+	> pppppp
+Grade: None.
+ Now try to guess the password:
+	> qqqqqq
+Grade: None.
+ Now try to guess the password:
+	> rrrrrr
+Grade: None.
+ Now try to guess the password:
+	> ssssss
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> tttttt
+Grade: None.
+ Now try to guess the password:
+	> uuuuuu
+Grade: None.
+ Now try to guess the password:
+	> vvvvvv
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> wwwwww
+Grade: None.
+ Now try to guess the password:
+	> xxxxxx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7acsvx
  Grade: 2 bull(s) and 4 cow(s).
  Now try to guess the password:
+	> a7csvx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> c7asvx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7casvx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> ac7svx
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> ca7svx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sa7cvx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> as7cvx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7sacvx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> s7acvx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> a7scvx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7ascvx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7csavx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> c7savx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> s7cavx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7scavx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> cs7avx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> sc7avx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sca7vx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> csa7vx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> asc7vx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sac7vx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> cas7vx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> acs7vx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> vcs7ax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> cvs7ax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> svc7ax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> vsc7ax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> csv7ax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> scv7ax
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 7cvsax
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> c7vsax
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> v7csax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7vcsax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> cv7sax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> vc7sax
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> vs7cax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> sv7cax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7vscax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> v7scax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> s7vcax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7svcax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7scvax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> s7cvax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> c7svax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7csvax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sc7vax
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> cs7vax
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> as7vcx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sa7vcx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7asvcx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> a7svcx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> s7avcx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7savcx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> vsa7cx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> sva7cx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> avs7cx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> vas7cx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> sav7cx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> asv7cx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> a7vscx
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> 7avscx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> va7scx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> av7scx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 7vascx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> v7ascx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> v7sacx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7vsacx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> sv7acx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> vs7acx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7svacx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> s7vacx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> c7vasx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7cvasx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> vc7asx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> cv7asx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7vcasx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> v7casx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> a7cvsx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> 7acvsx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> ca7vsx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> ac7vsx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> 7cavsx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> c7avsx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> cva7sx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> vca7sx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> acv7sx
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> cav7sx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> vac7sx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> avc7sx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> av7csx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> va7csx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7avcsx
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> a7vcsx
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> v7acsx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> 7vacsx
+ Grade: 1 bull(s) and 5 cow(s).
+ Now try to guess the password:
+	> svac7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> vsac7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> asvc7x
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> savc7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> vasc7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> avsc7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> cvsa7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> vcsa7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> scva7x
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> csva7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> vsca7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> svca7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> sacv7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> ascv7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> csav7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> scav7x
+ Grade: 3 bull(s) and 3 cow(s).
+ Now try to guess the password:
+	> acsv7x
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> casv7x
+ Grade: 2 bull(s) and 4 cow(s).
+ Now try to guess the password:
+	> cavs7x
+ Grade: 4 bull(s) and 2 cow(s).
+ Now try to guess the password:
+	> acvs7x
+Grade: 6 bull(s).
+You win :)
