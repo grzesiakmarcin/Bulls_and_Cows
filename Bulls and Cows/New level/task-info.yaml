@@ -309,5 +309,21 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/projects/53/stages/292/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    The length of secret code is incorrect.
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    Podaj długość hasła
+    &gt; 4
+    Input the number of possible symbols in the code:
+    &gt; 10
+  time: Sun, 21 Feb 2021 12:28:09 UTC
 record: -1

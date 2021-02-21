@@ -1,5 +1,6 @@
 package bullscows;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Main {
@@ -17,7 +18,7 @@ class Bebechy {
 
     public void tryToGuessPass(String realPass, String guessPass, int passLength) {
 
-       // System.out.println("hasło do odgadnięcia: "+realPass);
+        // System.out.println("hasło do odgadnięcia: "+realPass);
 
         Scanner sc = new Scanner(System.in);
 
@@ -26,10 +27,10 @@ class Bebechy {
         int bulls = 0;
         int cows = 0;
 
-        int[] passNumberArray = new int[passLength];
-        int[] guessSecretArray = new int[passLength];
+        String[] passNumberArray = new String[passLength];
+        String[] guessSecretArray = new String[passLength];
 
-        passNumberArray = new ArrayMaker().makeArrayFromInt(passNumberArray, Integer.parseInt(realPass));
+        passNumberArray = new ArrayMaker().makeArrayFromString(passNumberArray, realPass);
         guessSecretArray = new ArrayMaker().makeArrayFromString(guessSecretArray, guessPass);
 
         bulls = new Bebechy().checkForBulls(passNumberArray, guessSecretArray);
@@ -47,15 +48,15 @@ class Bebechy {
         }
 
         while (bulls != passLength) {
-            System.out.println("Spróbuj ponownie zgadnąc hasło:");
+            // System.out.println("Spróbuj ponownie zgadnąc hasło:");
             anotherGuess = checkTheGuessPassLength(passLength);
 
 
-            int[] anotherPassNumberArray = new int[realPass.length()];
-            int[] anotherGuessSecretArray = new int[anotherGuess.length()];
+            String[] anotherPassNumberArray = new String[realPass.length()];
+            String[] anotherGuessSecretArray = new String[anotherGuess.length()];
 
-            passNumberArray = new ArrayMaker().makeArrayFromInt(passNumberArray, Integer.parseInt(realPass));
-            guessSecretArray = new ArrayMaker().makeArrayFromInt(anotherGuessSecretArray, Integer.parseInt(anotherGuess));
+            passNumberArray = new ArrayMaker().makeArrayFromString(passNumberArray, realPass);
+            guessSecretArray = new ArrayMaker().makeArrayFromString(anotherGuessSecretArray, anotherGuess);
 
 
             bulls = new Bebechy().checkForBulls(passNumberArray, anotherGuessSecretArray);
@@ -78,16 +79,14 @@ class Bebechy {
     }
 
 
+    public String generujPass(int howManyDigits, int howManySymbols) {
 
-
-    public String generujPass(int howManyDigits) {
-
-        if(howManyDigits>10){
-            return generujPassBiggerThanTenCharacters(howManyDigits);
-        }
-        else
-            return generatePassLessThatTenDigit(howManyDigits);
-
+//        if(howManyDigits<10){
+//        return generatePassLessThatTenDigit(howManyDigits);
+//
+//        }
+//        else
+        return generujPassAllCharacters(howManyDigits, howManySymbols);
 
 
     }
@@ -114,14 +113,13 @@ class Bebechy {
     }
 
 
-    public String generujPassBiggerThanTenCharacters(int howManyDigits) {
+    public String generujPassAllCharacters(int howManyDigits, int howManySymbols) {
         StringBuilder sb = new StringBuilder();
         List<Character> thisList = new LinkedList<>();
 
 
-
         while (howManyDigits > thisList.size()) {
-            thisList.add(generateLatinLettersAndDigitPass());
+            thisList.add(generateLatinLettersAndDigitPass(howManySymbols));
         }
 
         for (Character element : thisList) {
@@ -129,10 +127,9 @@ class Bebechy {
 
         }
 
+
         return sb.toString();
     }
-
-
 
 
 //
@@ -152,8 +149,6 @@ class Bebechy {
 //    public int cyfralosowa() {
 //        return new Random().nextInt(10);
 //    }
-
-
 
 
     public char generateDigitDifferentFromZero() {
@@ -187,21 +182,20 @@ class Bebechy {
 
     }
 
-    public char generateLatinLettersAndDigitPass(){
+    public char generateLatinLettersAndDigitPass(int howManySymbols) {
         Random rd = new Random();
-        String abc = "abcdefghijklmnoprstuwxyz0123456789";
+        String abc = "0123456789abcdefghijklmnopqrstuvwxyz";//36
 
-        char letter = abc.charAt(rd.nextInt(abc.length()));
+        char[] array = abc.toCharArray();
+        return abc.charAt(rd.nextInt(howManySymbols));
 
-        return Character.valueOf(letter);
     }
 
 
-
-    public int checkForBulls(int[] password, int[] guess) {
+    public int checkForBulls(String[] password, String[] guess) {
         int bulls = 0;
         for (int i = 0; i < password.length; i++) {
-            if (password[i] == guess[i]) {
+            if (password[i].equals(guess[i])) {
                 bulls++;
             }
         }
@@ -209,17 +203,17 @@ class Bebechy {
     }
 
 
-    public int checkForCows(int[] password, int[] guess) {
+    public int checkForCows(String[] password, String[] guess) {
         int cows = 0;
 
 
         for (int i = 0; i < password.length; i++) {
-            if (guess[i] == password[i]) {
+            if (guess[i].equals(password[i])) {
                 //bullCount++;
                 continue;
             }
             for (int j = 0; j < password.length; j++) {
-                if (guess[i] == password[j]) {
+                if (guess[i].equals(password[j])) {
                     cows++;
                 }
             }
@@ -228,15 +222,51 @@ class Bebechy {
         return cows;
     }
 
-    public String checkTheGuessPassLength(int passLenght){
+    public String checkTheGuessPassLength(int passLenght) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Now try to guess the password:");
         String guessPass = sc.next();
-        while (guessPass.length()!=passLenght){
-            System.out.println("You provided "+guessPass.length()+" character long pass. \nPlease provide "+passLenght+" character long pass.");
-            guessPass=sc.next();
+        while (guessPass.length() != passLenght) {
+            System.out.println("You provided " + guessPass.length() + " character long pass. \nPlease provide " + passLenght + " character long pass.");
+            guessPass = sc.next();
         }
 
         return guessPass;
+    }
+
+
+    public int checkTheProvidedSymbolNumber() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input the number of possible symbols in the code:");
+        int provided = sc.nextInt();
+        while (provided < 0 && provided > 36) {
+            System.out.println("I'm afraid the You number has to be less than 37 \nPlease try again");
+            provided = sc.nextInt();
+        }
+
+        return provided;
+    }
+
+    public String printStars(int passLenght, int howManySymbols) {
+        StringBuilder sb = new StringBuilder("The secret is prepared: ");
+        String result = "";
+
+        String abc = "0123456789abcdefghijklmnopqrstuvwxyz";
+        char[] array = abc.toCharArray();
+
+        for (int i = 0; i < passLenght; i++) {
+            sb.append("*");
+        }
+        sb.append(" (");
+        String lastSymbol = String.valueOf(array[howManySymbols - 1]);
+
+        if (howManySymbols < 10) {
+            sb.append("0-" + lastSymbol + ").");
+        } else if (howManySymbols > 10) {
+            sb.append("0-9,a-" + lastSymbol + ").");
+        }
+
+        return String.valueOf(sb);
     }
 
 
@@ -256,14 +286,13 @@ class ArrayMaker {
     }
 
 
-    public int[] makeArrayFromString( int[] array,String string) {
+    public String[] makeArrayFromString(String[] array, String string) {
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = Integer.parseInt(string.substring(i, i + 1));
+            array[i] = string.substring(i, i + 1);
         }
         return array;
     }
-
 
 
 }
@@ -274,30 +303,26 @@ class Jumanji {
 
         Bebechy bb = new Bebechy();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj długość hasła");
+        System.out.println("Input the length of the secret code:");
 
         int passLength = sc.nextInt();
 
         do {
             if (passLength > 36) {
-                System.out.println("Error: can't generate a secret number with a length of "+ passLength+" because there aren't enough unique digits. \n" +
+                System.out.println("Error: can't generate a secret number with a length of " + passLength + " because there aren't enough unique digits. \n" +
                         "Try again");
                 passLength = sc.nextInt();
             }
-        } while (passLength > 10);
+        } while (passLength > 36);
 
+        System.out.println("Input the number of possible symbols in the code:");
+        int howManySymbols = bb.checkTheProvidedSymbolNumber();
 
-        String realPass = bb.generujPass(passLength);
-
-        System.out.println("Zgaduj hasło:");
-
+        String realPass = bb.generujPass(passLength, howManySymbols);
+        System.out.println(bb.printStars(passLength, howManySymbols));
 
         String guessPass = bb.checkTheGuessPassLength(passLength);
-
-
-
-
-      bb.tryToGuessPass(realPass, guessPass, passLength);
+        bb.tryToGuessPass(realPass, guessPass, passLength);
 
 
     }
