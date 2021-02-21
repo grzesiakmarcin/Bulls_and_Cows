@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.769s</div>
+<div class="counter">0.281s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,114 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="start"></a>
+<h3 class="failures">start</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Wrong answer in test #2
+
+Seems like the calculation of bulls isn't right. For the guess &quot;7777&quot; there can be 1 bull at max.
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Input the length of the secret code:
+&gt; 4
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: **** (0-9).
+Now try to guess the password:
+&gt; 0000
+Grade: 1 bull(s) and 3 cow(s).7705
+Now try to guess the password:
+&gt; 1111
+Grade: None.
+Now try to guess the password:
+&gt; 2222
+Grade: None.
+Now try to guess the password:
+&gt; 3333
+Grade: None.
+Now try to guess the password:
+&gt; 4444
+Grade: None.
+Now try to guess the password:
+&gt; 5555
+Grade: 1 bull(s) and 3 cow(s).
+Now try to guess the password:
+&gt; 6666
+Grade: None.
+Now try to guess the password:
+&gt; 7777
+Grade: 2 bull(s) and 4 cow(s).
+Now try to guess the password:
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,309 +179,58 @@
 </tr>
 </thead>
 <tr>
-<td class="success">start</td>
-<td class="success">0.769s</td>
-<td class="success">passed</td>
+<td class="failures">start</td>
+<td class="failures">0.281s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
 Start test 1?[0m
-Podaj długość hasła
+Input the length of the secret code:
 &gt; 1
-Zgaduj hasło:
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: * (0-9).
+Now try to guess the password:
 &gt; 0
-Grade: None. The secret code is 2.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 1
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 2
-Grade: 1 bull(s).
+Grade: 1 bull(s). The secret code is 0.
 You win :)
 ?[1;31m
 Start test 2?[0m
-Podaj długość hasła
+Input the length of the secret code:
 &gt; 4
-Zgaduj hasło:
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: **** (0-9).
+Now try to guess the password:
 &gt; 0000
-Grade: None. The secret code is 9123.
-Spróbuj ponownie zgadnąc hasło:
+Grade: 1 bull(s) and 3 cow(s).7705
+Now try to guess the password:
 &gt; 1111
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+Now try to guess the password:
 &gt; 2222
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+Now try to guess the password:
 &gt; 3333
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+Now try to guess the password:
 &gt; 4444
 Grade: None.
-Spróbuj ponownie zgadnąc hasło:
+Now try to guess the password:
 &gt; 5555
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
+Grade: 1 bull(s) and 3 cow(s).
+Now try to guess the password:
 &gt; 6666
 Grade: None.
-Spróbuj ponownie zgadnąc hasło:
+Now try to guess the password:
 &gt; 7777
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 8888
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 9999
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 1239
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 2139
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 3129
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 1329
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 2319
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 3219
-Grade: 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 9213
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 2913
-Grade: 1 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 1923
-Grade: 2 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 9123
-Grade: 4 bull(s).
-You win :)
-?[1;31m
-Start test 3?[0m
-Podaj długość hasła
-&gt; 6
-Zgaduj hasło:
-&gt; 000000
-Grade: None. The secret code is 726149.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 111111
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 222222
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 333333
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 444444
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 555555
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 666666
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 777777
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 888888
-Grade: None.
-Spróbuj ponownie zgadnąc hasło:
-&gt; 999999
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 124679
 Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 214679
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 412679
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 142679
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 241679
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 421679
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 621479
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 261479
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 162479
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 612479
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 216479
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 126479
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 146279
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 416279
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 614279
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 164279
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 461279
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 641279
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 642179
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 462179
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 264179
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 624179
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 426179
-Grade: 4 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 246179
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 746129
-Grade: 4 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 476129
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 674129
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 764129
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 467129
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 647129
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 147629
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 417629
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 714629
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 174629
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 471629
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 741629
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 761429
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 671429
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 176429
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 716429
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 617429
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 167429
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 164729
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 614729
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 416729
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 146729
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 641729
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 461729
-Grade: 1 bull(s) and 5 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 261749
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 621749
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 126749
-Grade: 4 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 216749
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 612749
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 162749
-Grade: 2 bull(s) and 4 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 762149
-Grade: 4 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 672149
-Grade: 3 bull(s) and 3 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 276149
-Grade: 4 bull(s) and 2 cow(s).
-Spróbuj ponownie zgadnąc hasło:
-&gt; 726149
-Grade: 6 bull(s).
-You win :)
-?[1;31m
-Start test 4?[0m
-Podaj długość hasła
-&gt; 11
-Error: can't generate a secret number with a length of 11 because there aren't enough unique digits. 
-Try again
+Now try to guess the password:
 </pre>
 </span>
 </div>
@@ -392,7 +242,7 @@ Try again
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at 19 lut 2021, 16:58:34</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 21 lut 2021, 14:40:52</p>
 </div>
 </div>
 </body>

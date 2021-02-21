@@ -42,7 +42,7 @@ class Bebechy {
         } else if (cows == 0 && bulls > 0) {
             System.out.println("Grade: " + bulls + " bull(s). The secret code is " + realPass + ".");
         } else if (cows > 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s).");
+            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s)."+realPass);
         } else if (cows == 0 && bulls == 0) {
             System.out.println("Grade: None. The secret code is " + realPass + ".");
         }
@@ -239,8 +239,8 @@ class Bebechy {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the number of possible symbols in the code:");
         int provided = sc.nextInt();
-        while (provided < 0 && provided > 36) {
-            System.out.println("I'm afraid the You number has to be less than 37 \nPlease try again");
+        while (provided < 0 || provided > 36) {
+            System.out.println("I'm afraid the You number has to be grater than 0, less than 37 \nPlease try again");
             provided = sc.nextInt();
         }
 
@@ -260,7 +260,7 @@ class Bebechy {
         sb.append(" (");
         String lastSymbol = String.valueOf(array[howManySymbols - 1]);
 
-        if (howManySymbols < 10) {
+        if (howManySymbols <= 10) {
             sb.append("0-" + lastSymbol + ").");
         } else if (howManySymbols > 10) {
             sb.append("0-9,a-" + lastSymbol + ").");
@@ -315,7 +315,7 @@ class Jumanji {
             }
         } while (passLength > 36);
 
-        System.out.println("Input the number of possible symbols in the code:");
+
         int howManySymbols = bb.checkTheProvidedSymbolNumber();
 
         String realPass = bb.generujPass(passLength, howManySymbols);

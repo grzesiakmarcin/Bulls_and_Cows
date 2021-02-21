@@ -1,294 +1,43 @@
 [1;31m
 Start test 1[0m
-Podaj długość hasła
+&Input the length of the secret code:
 > 1
-Zgaduj hasło:
+3Input the number of possible symbols in the code:
+> 10
+"The secret is prepared: * (0-9).
+ Now try to guess the password:
 > 0
-$Grade: None. The secret code is 2.
-$Spróbuj ponownie zgadnąc hasło:
-> 1
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-> 2
-Grade: 1 bull(s).
+)Grade: 1 bull(s). The secret code is 0.
 You win :)
 [1;31m
 Start test 2[0m
-Podaj długość hasła
+&Input the length of the secret code:
 > 4
-Zgaduj hasło:
+3Input the number of possible symbols in the code:
+> 10
+%The secret is prepared: **** (0-9).
+ Now try to guess the password:
 > 0000
-'Grade: None. The secret code is 9123.
-$Spróbuj ponownie zgadnąc hasło:
+$Grade: 1 bull(s) and 3 cow(s).7705
+ Now try to guess the password:
 > 1111
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+ Now try to guess the password:
 > 2222
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+ Now try to guess the password:
 > 3333
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
+Grade: None.
+ Now try to guess the password:
 > 4444
 Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
+ Now try to guess the password:
 > 5555
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
+ Grade: 1 bull(s) and 3 cow(s).
+ Now try to guess the password:
 > 6666
 Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
+ Now try to guess the password:
 > 7777
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-> 8888
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-> 9999
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 1239
-Grade: 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 2139
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 3129
- Grade: 2 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 1329
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 2319
-Grade: 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 3219
-Grade: 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 9213
- Grade: 2 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 2913
- Grade: 1 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 1923
- Grade: 2 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-> 9123
-Grade: 4 bull(s).
-You win :)
-[1;31m
-Start test 3[0m
-Podaj długość hasła
-> 6
-Zgaduj hasło:
-	> 000000
-)Grade: None. The secret code is 726149.
-$Spróbuj ponownie zgadnąc hasło:
-	> 111111
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 222222
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 333333
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-	> 444444
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 555555
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-	> 666666
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 777777
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 888888
-Grade: None.
-$Spróbuj ponownie zgadnąc hasło:
-	> 999999
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 124679
  Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 214679
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 412679
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 142679
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 241679
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 421679
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 621479
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 261479
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 162479
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 612479
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 216479
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 126479
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 146279
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 416279
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 614279
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 164279
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 461279
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 641279
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 642179
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 462179
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 264179
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 624179
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 426179
- Grade: 4 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 246179
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 746129
- Grade: 4 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 476129
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 674129
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 764129
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 467129
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 647129
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 147629
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 417629
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 714629
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 174629
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 471629
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 741629
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 761429
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 671429
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 176429
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 716429
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 617429
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 167429
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 164729
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 614729
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 416729
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 146729
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 641729
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 461729
- Grade: 1 bull(s) and 5 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 261749
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 621749
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 126749
- Grade: 4 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 216749
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 612749
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 162749
- Grade: 2 bull(s) and 4 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 762149
- Grade: 4 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 672149
- Grade: 3 bull(s) and 3 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 276149
- Grade: 4 bull(s) and 2 cow(s).
-$Spróbuj ponownie zgadnąc hasło:
-	> 726149
-Grade: 6 bull(s).
-You win :)
-[1;31m
-Start test 4[0m
-Podaj długość hasła
-> 11
-fError: can't generate a secret number with a length of 11 because there aren't enough unique digits. 
-Try again
+ Now try to guess the password:

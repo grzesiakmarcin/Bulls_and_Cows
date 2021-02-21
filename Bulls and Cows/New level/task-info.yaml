@@ -314,16 +314,42 @@ feedback:
   message: |-
     Wrong answer in test #2
 
-    The length of secret code is incorrect.
+    Seems like the calculation of bulls isn&#39;t right. For the guess &quot;7777&quot; there can be 1 bull at max.
 
     Please find below the output of your program during this failed test.
     Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
 
     ---
 
-    Podaj długość hasła
+    Input the length of the secret code:
     &gt; 4
     Input the number of possible symbols in the code:
     &gt; 10
-  time: Sun, 21 Feb 2021 12:28:09 UTC
+    The secret is prepared: **** (0-9).
+    Now try to guess the password:
+    &gt; 0000
+    Grade: 1 bull(s) and 3 cow(s).7705
+    Now try to guess the password:
+    &gt; 1111
+    Grade: None.
+    Now try to guess the password:
+    &gt; 2222
+    Grade: None.
+    Now try to guess the password:
+    &gt; 3333
+    Grade: None.
+    Now try to guess the password:
+    &gt; 4444
+    Grade: None.
+    Now try to guess the password:
+    &gt; 5555
+    Grade: 1 bull(s) and 3 cow(s).
+    Now try to guess the password:
+    &gt; 6666
+    Grade: None.
+    Now try to guess the password:
+    &gt; 7777
+    Grade: 2 bull(s) and 4 cow(s).
+    Now try to guess the password:
+  time: Sun, 21 Feb 2021 13:40:52 UTC
 record: -1
