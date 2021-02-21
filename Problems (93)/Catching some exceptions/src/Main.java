@@ -6,15 +6,14 @@ public class Main {
 
     public static void methodCatchingSomeExceptions() {
 
-   try {
-       methodThrowingExceptions();
+        try {
+            methodThrowingExceptions();
 
-   } catch (ArrayIndexOutOfBoundsException e) {
-       System.out.println("ArrayIndexOutOfBoundsException");
-   }
-   catch (NumberFormatException e) {
-       System.out.println("NumberFormatException");
-   }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException");
+        } catch (NumberFormatException e) {
+            System.out.println("NumberFormatException");
+        }
 
     }
 
