@@ -18,7 +18,6 @@ class Bebechy {
 
     public void tryToGuessPass(String realPass, String guessPass, int passLength) {
 
-        // System.out.println("hasło do odgadnięcia: "+realPass);
 
         Scanner sc = new Scanner(System.in);
 
@@ -42,7 +41,7 @@ class Bebechy {
         } else if (cows == 0 && bulls > 0) {
             System.out.println("Grade: " + bulls + " bull(s). The secret code is " + realPass + ".");
         } else if (cows > 0 && bulls > 0) {
-            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s)."+realPass);
+            System.out.println("Grade: " + bulls + " bull(s) and " + cows + " cow(s)." + realPass);
         } else if (cows == 0 && bulls == 0) {
             System.out.println("Grade: None. The secret code is " + realPass + ".");
         }
@@ -238,11 +237,30 @@ class Bebechy {
     public int checkTheProvidedSymbolNumber() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the number of possible symbols in the code:");
-        int provided = sc.nextInt();
-        while (provided < 0 || provided > 36) {
-            System.out.println("I'm afraid the You number has to be grater than 0, less than 37 \nPlease try again");
+        int provided = 0;
+        try {
             provided = sc.nextInt();
+            if (provided < 0 || provided > 36) {
+                System.out.println("Error: You provided wrong number");
+                System.exit(1);
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Error: \"abc 0 -7\" isn't a valid number");
+            System.exit(1);
         }
+
+//
+//        while (provided < 0 || provided > 36) {
+//            System.out.println("I'm afraid the You number has to be grater than 0, less than 37 \nPlease try again");
+//            try {
+//                provided = sc.nextInt();
+//
+//
+//            } catch (NumberFormatException e) {
+//                System.out.println("Error: \"abc 0 -7\" isn't a valid number");
+//                System.exit(1);
+//            }
+//        }
 
         return provided;
     }
@@ -267,6 +285,31 @@ class Bebechy {
         }
 
         return String.valueOf(sb);
+    }
+
+    public int takeIntImput() {
+        Scanner sc = new Scanner(System.in);
+        int input = 0;
+
+        try {
+            input = sc.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Error: \"abc 0 -7\" isn't a valid number");
+            System.exit(1);
+        }
+
+        if (input == 0) {
+            System.out.println("Error: 0 isn't a valid number");
+            System.exit(1);
+        }
+
+        return input;
+    }
+
+    public void throwThisException(int length, int howManySymbols) {
+        System.out.println("Error: it's not possible to generate a code with a length of " + length + " with " + howManySymbols + " unique symbols.");
+        System.exit(1);
+
     }
 
 
@@ -305,7 +348,9 @@ class Jumanji {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the length of the secret code:");
 
-        int passLength = sc.nextInt();
+
+        int passLength = bb.takeIntImput();
+
 
         do {
             if (passLength > 36) {
@@ -317,6 +362,12 @@ class Jumanji {
 
 
         int howManySymbols = bb.checkTheProvidedSymbolNumber();
+
+
+        if (howManySymbols < passLength) {
+            bb.throwThisException(passLength, howManySymbols);
+        }
+
 
         String realPass = bb.generujPass(passLength, howManySymbols);
         System.out.println(bb.printStars(passLength, howManySymbols));
